@@ -1,0 +1,259 @@
+.nav {
+  background: var(--clr-primary-3);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  position: relative;
+  box-shadow: var(--light-shadow);
+}
+
+/* nav container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav header */
+
+.logo {
+  overflow: hidden;
+}
+
+/* general style for logo */
+
+.f,
+.a,
+.b {
+  text-transform: uppercase;
+  text-shadow: 0px 3px 3px var(--main-primary-color-5);
+  cursor: pointer;
+}
+
+/* single style for logo */
+
+.f {
+  color: var(--main-primary-color-10);
+}
+.a {
+  color: var(--main-primary-color-9);
+}
+.b {
+  color: var(--clr-green-dark);
+}
+
+/* style for nav bars icon */
+.bars-btn,
+.cart-btn {
+  padding: 0.25rem 0.25rem;
+  background: transparent;
+  color: var(--main-dark-color);
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.bars-btn:hover .bars-icon {
+  color: var(--clr-green-dark);
+}
+.cart-btn:hover .cart-icon {
+  color: var(--clr-green-dark);
+}
+
+/* nav icons */
+.nav-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: none;
+}
+
+/* 
+==========================
+NAV MODAL FOR SMALL SCREEN
+==========================
+*/
+
+.nav-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+
+  width: 100vw;
+  height: 100vh;
+  background: hsla(0, 8%, 12%, 0.747);
+  transition: var(--transition);
+  z-index: -1;
+  transform: scale(0);
+  visibility: hidden;
+}
+
+.show-modal {
+  z-index: 5;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: var(--clr-white);
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+/* close modal button */
+
+.close-modal {
+  position: absolute;
+  right: 0;
+  font-size: 1.3rem;
+}
+
+.close-modal:hover {
+  color: var(--clr-red-dark);
+}
+/* sublinks */
+.sub-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem 0.5rem;
+}
+
+.sub-icon,
+.sub-label {
+  display: inline;
+  margin: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.modal-links {
+  transition: var(--transition);
+}
+
+.modal-links:hover {
+  color: var(--clr-green-dark);
+}
+
+.signin {
+  margin-left: 3rem;
+  transition: var(--transition);
+  color: var(--clr-red-dark);
+}
+
+.signin:hover {
+  color: var(--clr-green-dark);
+}
+
+/* 
+=============================
+SUBMENU FOR BIG DIVICE SCREEN
+=============================
+*/
+
+.b-submenu-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-links {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 60%;
+    text-transform: capitalize;
+    color: var(--clr-black);
+    padding-bottom: 0.5rem;
+  }
+
+  .bars-btn {
+    display: none;
+  }
+
+  .home-link,
+  .signin-link {
+    transition: var(--transition);
+    color: var(--clr-secondary-9);
+    font-weight: bold;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  .home-link:hover {
+    color: var(--clr-green-dark);
+  }
+  .signin-link:hover {
+    color: var(--clr-green-dark);
+  }
+
+  /* nav modal */
+
+  .nav-modal {
+    display: none;
+  }
+
+  /* 
+  =============================
+  SUBMENU FOR BIG DIVICE SCREEN
+  =============================
+  */
+
+  .product {
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    display: inline;
+    color: var(--main-dark-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  .b-submenu-wrapper {
+    display: none;
+    background: var(--clr-white);
+    width: fit-content;
+    min-width: 13rem;
+    padding: 1rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: var(--radius);
+    transition: var(--transition);
+  }
+
+  .show-submenu {
+    display: block;
+    z-index: 5;
+  }
+
+  .b-submenu-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: 50%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    height: 5px;
+    width: 10px;
+  }
+  /* submenu inner links */
+
+  .inner-head {
+    color: hsl(33, 74%, 45%);
+  }
+
+  .sub-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 1rem 0.5rem; */
+  }
+}
