@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { ecommerce } from '../Lib/ecommerceData'
 
 const Popular = () => {
   const [popular, setPopular] = useState([])
 
-  useState(() => {
+  useEffect(() => {
     const single = ecommerce.filter((item) => {
       return item.popular === true
     })
@@ -18,12 +19,12 @@ const Popular = () => {
         {popular.map((data, index) => {
           const { variant, img } = data
           return (
-            <article key={index} className='popular'>
+            <Link key={index} className='popular' to={`singleItem/${variant}`}>
               <div className='popular-img-box'>
                 <img src={img} alt={variant} className='popular-img' />
               </div>
               <h4>{variant}</h4>
-            </article>
+            </Link>
           )
         })}
       </section>

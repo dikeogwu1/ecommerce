@@ -42,7 +42,7 @@ const SmallScreen = () => {
       })
       setSingleItem([category])
     }
-  }, [navItem])
+  }, [navItem, modalMover.clientCenter, modalMover.clientHeight])
 
   // showing and removing submenu based on conditions
   const removeSubmenu = (e) => {

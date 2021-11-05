@@ -9,7 +9,7 @@ const Search = () => {
   return (
     <>
       <div className='form-container'>
-        <form id='search-form'>
+        <form action='/features' method='Get' id='search-form'>
           <label htmlFor='search'>Shop by searching</label>
           <div className='search-category'>
             <input

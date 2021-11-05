@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Footer from '../Footer/Footer'
 // import categories css
 import '../Home-categories/categories.css'

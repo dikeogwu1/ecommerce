@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 // import ecommerce store
 import { ecommerce } from '../Lib/ecommerceData'
 
 const MostReview = () => {
   const [reviews, setReviews] = useState([])
 
-  useState(() => {
+  useEffect(() => {
     const single = ecommerce.filter((item) => {
       return item.review === true
     })
@@ -19,7 +20,7 @@ const MostReview = () => {
         {reviews.map((review) => {
           const { type, id, price, offer, img } = review
           return (
-            <article key={id} className='most-review'>
+            <Link key={id} className='most-review' to={`singleItem/${id}`}>
               <div className='most-review-img'>
                 <img src={img} alt={type} className='most-img' />
                 <h4>{type}</h4>
@@ -28,7 +29,7 @@ const MostReview = () => {
                   <span>{!offer ? `$${price}` : `$${offer}`}</span>
                 </div>
               </div>
-            </article>
+            </Link>
           )
         })}
       </section>

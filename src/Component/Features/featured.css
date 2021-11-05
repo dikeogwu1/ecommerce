@@ -1,0 +1,120 @@
+.featured-container {
+  margin-top: 0.5rem;
+}
+
+.featured-container h3 {
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+  color: var(--clr-primary-3);
+}
+
+.feature-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  padding: 3rem 3rem;
+}
+
+.feature-wrapper article {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-wrapper article:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.feature-img-box {
+  height: 150px;
+}
+
+.feature-img-box img {
+  object-fit: contain;
+}
+
+.featured-text {
+  padding: 1rem;
+}
+
+.featured-text h4 {
+  color: var(--clr-primary-2);
+}
+
+.featured-price {
+  color: var(--clr-grey-5);
+  font-size: 1.1rem;
+}
+
+.featured-price span {
+  margin-left: 1rem;
+}
+
+.featured-footer {
+  color: var(--main-primary-color-9);
+}
+
+.featured-btn {
+  position: absolute;
+  bottom: 7%;
+  right: 5%;
+  transition: all 0.5s linear;
+}
+
+.add-cart,
+.remove-cart {
+  border: 2px solid var(--main-dark-color);
+  padding: 0.25rem;
+  letter-spacing: 0.1rem;
+  border-radius: 5px;
+  background: var(--clr-secondary-5);
+  transition: var(--transition);
+}
+
+.add-cart:hover {
+  background: var(--clr-primary-3);
+  color: var(--clr-white);
+}
+.remove-cart:hover {
+  background: var(--clr-secondary-9);
+  color: var(--clr-white);
+}
+
+.remove-cart {
+  display: none;
+}
+
+.show-remove-crat {
+  display: block;
+}
+
+.hide-add-cart {
+  display: none;
+}
+
+.hr {
+  border-color: var(--clr-grey-9);
+}
+
+@media screen and (min-width: 768px) {
+  .feature-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 800px) {
+  .feature-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .featured-btn {
+    z-index: -2;
+    visibility: hidden;
+    transform: scale(0);
+  }
+  .feature-wrapper article:hover .featured-btn {
+    transform: scale(1);
+    z-index: 1;
+    visibility: visible;
+  }
+}

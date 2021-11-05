@@ -47,6 +47,10 @@ MOST REVIEWED PRODUCTS
   height: 12rem;
 }
 
+.most-review-img h4 {
+  color: var(--main-dark-color);
+}
+
 .most-img {
   object-fit: contain;
 }
@@ -213,7 +217,7 @@ GENARAL STYLE CATEGORIES
   /* popular categories */
 
   .popular-img-box {
-    height: 6rem;
+    height: 7rem;
   }
 
   /* wrist watches */
@@ -225,6 +229,6 @@ GENARAL STYLE CATEGORIES
 
 @media screen and (min-width: 1200px) {
   .popular-img-box {
-    height: 9rem;
+    height: 60%;
   }
 }
