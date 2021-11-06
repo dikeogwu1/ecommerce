@@ -4,7 +4,7 @@ export const ecommerce = [
     id: 1,
     category: 'normal',
     type: 'men Tshirt',
-    variant: 'men clothing',
+    variant: 'Men clothing',
     name: `Men Sparkly Sequin 70s Disco Dancing Dress Shirt Mesh Long Sleeves Party Club M
 `,
     brand: 'brand new',
@@ -16,7 +16,7 @@ export const ecommerce = [
     id: 2,
     category: 'normal',
     type: 'men shirt',
-    variant: 'men clothing',
+    variant: 'Men clothing',
     name: `Mens Hotrod 58 Long Sleeve T Shirt Rat Rod Rust Garage Vintage Car Clothing 113
 `,
     brand: 'brand new',
@@ -30,7 +30,7 @@ export const ecommerce = [
     id: 3,
     category: 'offer',
     type: 'men Tshirt',
-    variant: 'men clothing',
+    variant: 'Men clothing',
     name: `HERM DISTRESSED FLAG MENS T-SHIRT TOP FOOTBALL GIFT SHIRT CLOTHING JERSEY
 `,
     brand: 'brand new',
@@ -44,7 +44,7 @@ export const ecommerce = [
     id: 4,
     category: 'normal',
     type: 'men polo',
-    variant: 'men clothing',
+    variant: 'Men clothing',
     name: `ALDERNEY FADED FLAG MENS T-SHIRT TEE TOP FOOTBALL GIFT SHIRT CLOTHING JERSEY
 `,
     brand: 'brand new',
@@ -57,7 +57,7 @@ export const ecommerce = [
     id: 5,
     category: 'normal',
     type: 'men Tshirt',
-    variant: 'men clothing',
+    variant: 'Men clothing',
     name: `SALSA DANCING EVOLUTION OF MAN MENS T-SHIRT TEE TOP GIFT CLOTHING
 `,
     brand: 'brand new',
@@ -70,7 +70,7 @@ export const ecommerce = [
     id: 6,
     category: 'offer',
     type: 'men polo',
-    variant: 'men clothing',
+    variant: 'Men clothing',
     name: `Juventus Chinese New Year Crew Neck Short Sleeve Shirt - White - Mens
 `,
     brand: 'brand new',
@@ -84,7 +84,7 @@ export const ecommerce = [
     id: 7,
     category: 'offer',
     type: 'men polo',
-    variant: 'men clothing',
+    variant: 'Men clothing',
     name: `4F Men Clothing Tee Functional Longsleeve Running Black Training H4Z19-TSMLF001B
 `,
     brand: 'brand new',
@@ -98,7 +98,7 @@ export const ecommerce = [
     id: 8,
     category: 'normal',
     type: 'men Tshirt',
-    variant: 'men clothing',
+    variant: 'Men clothing',
     name: `Man's Clothing Filson Short Sleeve Ranger Solid One-Pocket T-Shirt (Fast Track)
 `,
     brand: 'brand new',
@@ -112,7 +112,7 @@ export const ecommerce = [
     id: 9,
     category: 'offer',
     type: 'ladies wear',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Women's CALVIN KLEIN Charcoal Gray Shift Dress Wear To Work Size 10 Medium
 `,
     brand: 'brand new',
@@ -126,7 +126,7 @@ export const ecommerce = [
     id: 10,
     category: 'normal',
     type: 'ladies wear',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Sale 2D102 - Versatile Silk Multi Wear Scarf Long Maxi Dress, Skirt, Maternity
 `,
     brand: `New (Other)`,
@@ -139,7 +139,7 @@ export const ecommerce = [
     id: 11,
     category: 'normal',
     type: 'ladies shirt',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Emma & Michele Womens Tie Back Bell Sleeves Work Wear Shirt dress BHFO 8021
 `,
     brand: `brand new`,
@@ -152,7 +152,7 @@ export const ecommerce = [
     category: 'normal',
     type: 'ladies shirt',
     popular: true,
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Printed Cotton Kaftan Ladies Wear Kimono Nice Maxi Dress Caftan Resort Wear Gown
 `,
     brand: `New (Other)`,
@@ -164,7 +164,7 @@ export const ecommerce = [
     id: 13,
     category: 'normal',
     type: 'ladies shirt',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Floral Print Kaftan Lady Wear Cotton Caftan V-Neck Gown Beach Wear Maxi Dress
 `,
     brand: `New (Other)`,
@@ -176,7 +176,7 @@ export const ecommerce = [
     id: 14,
     category: 'normal',
     type: 'ladies top',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Chanel Dress Clothing Tops Wool Women 'S Black System
 `,
     brand: `Pre-Owned`,
@@ -188,7 +188,7 @@ export const ecommerce = [
     id: 15,
     category: 'offer',
     type: 'ladies top',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Chanel Dress Clothing Tops Silk Linen Women 'S Black System 
 `,
     brand: `Pre-Owned`,
@@ -201,7 +201,7 @@ export const ecommerce = [
     id: 16,
     category: 'normal',
     type: 'ladies shirt',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `NWT Jones Wear Black Silver Textured Sleeveless Flare-Skirt Party Dress Size 8 
 `,
     brand: `brand new`,
@@ -213,7 +213,7 @@ export const ecommerce = [
     id: 17,
     category: 'offer',
     type: 'ladies shirt',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Chanel See-Through Layered Long Dress Setup Clothing Apparel Fashion Race 
 `,
     brand: `Pre-Owned`,
@@ -226,7 +226,7 @@ export const ecommerce = [
     id: 18,
     category: 'deal',
     type: 'ladies cap',
-    variant: 'women cap',
+    variant: 'Women cap',
     name: `Women Winter Plush Fluffy Bucket Hat Warm Faux Fur Fisherman Hats Cap Decor 
 `,
     brand: `Pre-Owned`,
@@ -238,7 +238,7 @@ export const ecommerce = [
     id: 19,
     category: 'normal',
     type: 'ladies shirt',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Lands' End Polo Shirt Women's Plus Size 1X (16W-18W) Blue Short Sleeve Cotton
 `,
     brand: `Pre-Owned`,
@@ -251,7 +251,7 @@ export const ecommerce = [
     category: 'offer',
     type: 'ladies polo',
     review: true,
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Ralph Lauren Red Polo Match NWT S
 `,
     brand: `Pre-Owned`,
@@ -264,7 +264,7 @@ export const ecommerce = [
     id: 21,
     category: 'offer',
     type: 'ladies polo',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `Vintage Polo Ralph Lauren Anchor Logo T Shirt Women's 2XL Black Red Tee
 `,
     brand: `Pre-Owned`,
@@ -277,7 +277,7 @@ export const ecommerce = [
     id: 22,
     category: 'offer',
     type: 'ladies polo',
-    variant: 'women clothing',
+    variant: 'Women clothing',
     name: `ASOS Polo Neck With Long Sleeves Blue Size UK 10 rrp £14 DH191 CC 14
 `,
     brand: `New (Other)`,
@@ -291,7 +291,7 @@ export const ecommerce = [
     id: 23,
     category: 'offer',
     type: 'party bag',
-    variant: 'ladies bag',
+    variant: 'Ladies bag',
     popular: true,
     name: `Women's Girls Ladies Oxford Backpack Rucksack Travel Shoulder School Bag
 `,
@@ -306,7 +306,7 @@ export const ecommerce = [
     id: 24,
     category: 'normal',
     type: 'ladies sholder bag',
-    variant: 'ladies bag',
+    variant: 'Ladies bag',
     name: `Ladies Remonte Shoulder Bag Q0390
 `,
     brand: `brand new`,
@@ -319,7 +319,7 @@ export const ecommerce = [
     id: 25,
     category: 'normal',
     type: 'hand bag',
-    variant: 'ladies bag',
+    variant: 'Ladies bag',
     name: `Ladies Tote Shoulder Bag Satchel Genuine Leather Vintage Brown Handmade Handbag
 `,
     brand: `brand new`,
@@ -332,7 +332,7 @@ export const ecommerce = [
     id: 26,
     category: 'offer',
     type: 'ladies sholder bag',
-    variant: 'ladies bag',
+    variant: 'Ladies bag',
     name: `Ladies Bagzone Hand Bag Beige Leather Look RRP £25
 `,
     brand: `new (other)`,
@@ -346,7 +346,7 @@ export const ecommerce = [
     id: 27,
     category: 'offer',
     type: 'ladies sholder bag',
-    variant: 'ladies bag',
+    variant: 'Ladies bag',
     name: `XS BAGGAGE LEATHER LADIES BAG SIZE 34X28 CM
 `,
     brand: `new (other)`,
@@ -362,7 +362,7 @@ export const ecommerce = [
     category: 'normal',
     type: 'men sholder bag',
     review: true,
-    variant: 'men bag',
+    variant: 'Men bag',
     name: `Nike Tech Crossbody Bag Unisex Sports Travel Outdoor Office Casual
 `,
     brand: `brand new`,
@@ -375,7 +375,7 @@ export const ecommerce = [
     id: 29,
     category: 'normal',
     type: 'men sholder bag',
-    variant: 'men bag',
+    variant: 'Men bag',
     name: `PIQUADRO men's blue leather business office laptop 15" bag briefcase NEW
 `,
     brand: `brand new`,
@@ -388,7 +388,7 @@ export const ecommerce = [
     id: 30,
     category: 'offer',
     type: 'men sholder bag',
-    variant: 'men bag',
+    variant: 'Men bag',
     name: `SOCHA Men's Bag Notebook Business 6 Large Fan Briefcase Office Bag
 `,
     brand: `new (other)`,
@@ -403,7 +403,7 @@ export const ecommerce = [
     id: 31,
     category: 'offer',
     type: 'women sandals',
-    variant: 'women foot wear',
+    variant: 'Women foot wear',
     name: `Steve Madden Ruiz-G Gladiator Pink Glitter Women's Sandal Size 7
 `,
     brand: `new (other)`,
@@ -418,7 +418,7 @@ export const ecommerce = [
     category: 'normal',
     type: 'women shoe',
     popular: true,
-    variant: 'women foot wear',
+    variant: 'Women foot wear',
     name: `Women Men Furry Lined Clogs Slippers Winter Warm Garden Shoes Mules Waterproof
 `,
     brand: `new (other)`,
@@ -431,7 +431,7 @@ export const ecommerce = [
     id: 33,
     category: 'offer',
     type: 'women sandals',
-    variant: 'women foot wear',
+    variant: 'Women foot wear',
     name: `Charles by Charles David Womens Taupe Evening Sandals 7.5 Medium (B,M) BHFO 
 `,
     brand: `new (other)`,
@@ -445,7 +445,7 @@ export const ecommerce = [
     id: 34,
     category: 'normal',
     type: 'women sandals',
-    variant: 'women foot wear',
+    variant: 'Women foot wear',
     name: `Madden Girl Womens Flashy Patent Stiletto Platform Sandals Shoes BHFO  
 `,
     brand: `new (other)`,
@@ -459,7 +459,7 @@ export const ecommerce = [
     id: 35,
     category: 'normal',
     type: 'can',
-    variant: 'boys canverse',
+    variant: 'Boys canverse',
     name: `Converse Run Star Veloz Limited-edition Platform Shoes Black / Orange  
 `,
     brand: `Brand New · Converse`,
@@ -472,7 +472,7 @@ export const ecommerce = [
     id: 36,
     category: 'normal',
     type: 'can',
-    variant: 'boys canverse',
+    variant: 'Boys canverse',
     name: `Converse Chuck Taylor All Star Classic Canvas Iconic Shoes white  
 `,
     brand: `Brand New`,
@@ -484,7 +484,7 @@ export const ecommerce = [
     id: 37,
     category: 'normal',
     type: 'snickers',
-    variant: 'boys canverse',
+    variant: 'Boys canverse',
     name: `Converse chuck taylor all star mid canvas trainers 146638c blue uk14/us14/eu49
 `,
     brand: `Brand New`,
@@ -497,7 +497,7 @@ export const ecommerce = [
     category: 'normal',
     type: 'snickers',
     popular: true,
-    variant: 'boys canverse',
+    variant: 'Boys canverse',
     name: `NIB CONVERSE UNT1TL3D High 'Hi-Vis Collection - White Iridescent' Shoes
 `,
     brand: `Brand New`,
@@ -509,7 +509,7 @@ export const ecommerce = [
     id: 39,
     category: 'offer',
     type: 'snickers',
-    variant: 'boys canverse',
+    variant: 'Boys canverse',
     name: `Size UK 7 - Converse Run Star Hike Black 2019
 `,
     brand: `Brand New · Converse`,
@@ -522,8 +522,8 @@ export const ecommerce = [
   {
     id: 40,
     category: 'normal',
-    type: 'office shoe',
-    variant: 'men shoes',
+    type: 'office shoes',
+    variant: 'Men shoes',
     name: `Samuel Windsor, hand made, formal, lace-up, brown shoes,good Con Uk8
 `,
     brand: `Brand New`,
@@ -535,7 +535,7 @@ export const ecommerce = [
     id: 41,
     category: 'normal',
     type: 'office shoe',
-    variant: 'men shoes',
+    variant: 'Men shoes',
     name: `Mens Dress Formal Business Leisure Shoes Work Office Pointy Toe Oxfords
 `,
     brand: `New (Other)`,
@@ -548,7 +548,7 @@ export const ecommerce = [
     category: 'normal',
     type: 'party shoe',
     popular: true,
-    variant: 'men shoes',
+    variant: 'Men shoes',
     name: `2020 new men's leather shoes lace-up wedding shoes business office Oxford
 `,
     brand: `New (Other)`,
@@ -559,7 +559,7 @@ export const ecommerce = [
   {
     id: 43,
     category: 'offer',
-    variant: 'men shoes',
+    variant: 'Men shoes',
     type: 'office shoe',
     name: `Mens Pointed Toe Wedding Business Party Patent Formal Office Smart Dress Shoes
 `,
@@ -575,7 +575,7 @@ export const ecommerce = [
   {
     id: 44,
     category: 'normal',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     review: true,
     type: 'stainless',
     name: `Casio Men's Edifice Leather Black Watch EFR-553L-1BV
@@ -588,7 +588,7 @@ export const ecommerce = [
   {
     id: 45,
     category: 'normal',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'stainless',
     name: `Casio Edifice Solar Powered Sapphire Crystal Slim Case Watch EFS-S560D-1AVUEF
 `,
@@ -600,7 +600,7 @@ export const ecommerce = [
   {
     id: 46,
     category: 'normal',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'stainless',
     name: `Casio Men's Edifice Stainless Steel Black EFR-556DB-1AVUEF Watch
 `,
@@ -613,7 +613,7 @@ export const ecommerce = [
   {
     id: 47,
     category: 'normal',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'black leather',
     name: `Casio Edifice EF-121 36 mm Quartz 10 Bar Brown Leather
 `,
@@ -625,7 +625,7 @@ export const ecommerce = [
   {
     id: 48,
     category: 'normal',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'black leather',
     name: `BRAND NEW CASIO EDIFICE ERA-201RBK-1 RED BULL INFINITI RACING SAPPHIRE
 `,
@@ -637,7 +637,7 @@ export const ecommerce = [
   {
     id: 49,
     category: 'normal',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'black leather',
     name: `CASIO EDIFICE ECB-10TMS-1AJR TOM'S Racing Limited Edition Men's Watch New in Box
 `,
@@ -649,7 +649,7 @@ export const ecommerce = [
   {
     id: 50,
     category: 'offer',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'black leather',
     name: `New in Box CASIO Edifice EFV-540PB-1A (5563) 100M H2O Chronograph 44mm watch
 `,
@@ -662,7 +662,7 @@ export const ecommerce = [
   {
     id: 51,
     category: 'offer',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'black leather',
     name: `Fashion Men's Leather Military Alloy Analog Quartz Wrist Watch Business Watches`,
     brand: `New`,
@@ -674,7 +674,7 @@ export const ecommerce = [
   {
     id: 52,
     category: 'latest',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     review: true,
     type: 'black leather',
     name: `Case Leather Band Quartz Analog Wrist Watch
@@ -688,7 +688,7 @@ export const ecommerce = [
   {
     id: 53,
     category: 'latest',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'random watch',
     name: `NEW Watch Michael Kors Portia mk3845
 `,
@@ -700,7 +700,7 @@ export const ecommerce = [
   {
     id: 54,
     category: 'latest',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'random watch',
     name: `Casio G-SHOCK GBA-900-1A6JF Tough Watch Japan
 `,
@@ -712,7 +712,7 @@ export const ecommerce = [
   {
     id: 55,
     category: 'latest',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'random watch',
     name: `Casio Watch ga-700 Blue G-Shock 200mt W.R. Super Light
 `,
@@ -724,7 +724,7 @@ export const ecommerce = [
   {
     id: 56,
     category: 'latest',
-    variant: 'wrist watch',
+    variant: 'Wrist watch',
     type: 'random watch',
     name: `Casiodw-Watch 5600sc Blue G-Shock 200mt W.R. EL Backlight 43mm
 `,
@@ -739,7 +739,7 @@ export const ecommerce = [
   {
     id: 57,
     category: 'offer',
-    variant: 'mobile phone',
+    variant: 'Mobile phone',
     type: 'redmi',
     name: `Redmi 9 4GB RAM 64 GB Carbon Black Factory Unlocked-NV9
 `,
@@ -753,9 +753,9 @@ export const ecommerce = [
   {
     id: 58,
     category: 'deal',
-    variant: 'mobile phone',
+    variant: 'Mobile phone',
     type: 'iphone',
-    name: `Apple iPhone 11 Pro Max - 64GB-Gold (without Simlock) A2218 (CDMA + GSM)
+    name: `Apple Iphone 11 Pro Max - 64GB-Gold (without Simlock) A2218 (CDMA + GSM)
 `,
     brand: `Pre-Owned`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635428461/my%20images/s-l225_qujefy.webp`,
@@ -765,10 +765,10 @@ export const ecommerce = [
   {
     id: 59,
     category: 'offer',
-    variant: 'mobile phone',
+    variant: 'Mobile phone',
     review: true,
     type: 'iphone',
-    name: `Apple iPhone 11 Pro - 256GB - Space Grey (Unlocked) A2215 (CDMA + GSM)
+    name: `Apple Iphone 11 Pro - 256GB - Space Grey (Unlocked) A2215 (CDMA + GSM)
 `,
     brand: `brand new`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635428606/my%20images/s-l225_xzbpuv.webp`,
@@ -779,9 +779,9 @@ export const ecommerce = [
   {
     id: 60,
     category: 'normal',
-    variant: 'mobile phone',
+    variant: 'Mobile phone',
     type: 'iphone',
-    name: `iPhone X - 64GB - Silver (Unlocked) A1865 (CDMA + GSM)
+    name: `Iphone X - 64GB - Silver (Unlocked) A1865 (CDMA + GSM)
 `,
     brand: `New (other)`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635430095/my%20images/photo-1624006930503-6d20b0717097_r8uqu0.jpg`,
@@ -792,7 +792,7 @@ export const ecommerce = [
   {
     id: 61,
     category: 'normal',
-    variant: 'mobile phone',
+    variant: 'Mobile phone',
     type: 'samsung',
     name: `Samsung Galaxy A71 5G, 128GB - Prism Cube Black (Factory Unlocked) NEW!
 `,
@@ -804,7 +804,7 @@ export const ecommerce = [
   {
     id: 62,
     category: 'normal',
-    variant: 'mobile phone',
+    variant: 'Mobile phone',
     type: 'samsung',
     name: ` Samsung Galaxy A52 5G A526U 128GB T-Mobile ONLY Smartphone Cellphone Y147
 `,
@@ -816,7 +816,7 @@ export const ecommerce = [
   {
     id: 63,
     category: 'normal',
-    variant: 'mobile phone',
+    variant: 'Mobile phone',
     popular: true,
     type: 'samsung',
     name: ` Samsung Galaxy S20 FE 5G - 128GB 256GB Unlocked All Colours Very Good Condition

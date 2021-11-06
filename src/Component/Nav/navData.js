@@ -12,7 +12,7 @@ const sublinks = [
     page: 'Daily deals',
     text: `Check out our deals of the day, it's awesome`,
     links: [
-      { label: 'discount', icon: <FaCreditCard />, url: '/discount', img: '' },
+      { label: 'Deals', icon: <FaCreditCard />, url: '/discount', img: '' },
       { label: 'offers', icon: <MdAddShoppingCart />, url: '/offer', img: '' },
     ],
   },

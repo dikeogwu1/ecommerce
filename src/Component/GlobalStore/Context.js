@@ -1,4 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
+// imoprt ecommerce store
+import { ecommerce } from '../Lib/ecommerceData'
 
 export const globalStore = React.createContext()
 
@@ -16,11 +18,18 @@ const Context = ({ children }) => {
   const [showCategories, setShowCategories] = useState(false)
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false)
   const [cart, setCart] = useState(getLocalStorage())
-  // const [store, set] = useState()
+  const [input, setInput] = useState('')
+  const [submit, setSubmit] = useState(false)
 
   useEffect(() => {
     localStorage.setItem('list', JSON.stringify(cart))
   }, [cart])
+
+  const getSingle = ecommerce.map((single) => {
+    return single.variant
+  })
+  const check = new Set(getSingle)
+  const items = [...check]
 
   return (
     <globalStore.Provider
@@ -33,6 +42,11 @@ const Context = ({ children }) => {
         setShowCategories,
         cart,
         setCart,
+        input,
+        setInput,
+        submit,
+        setSubmit,
+        items,
       }}
     >
       {children}
