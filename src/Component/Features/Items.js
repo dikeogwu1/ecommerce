@@ -7,9 +7,9 @@ import { ecommerce } from '../Lib/ecommerceData'
 import { useGlobalContext } from '../GlobalStore/Context'
 
 const Items = ({ product }) => {
-  const { id, offer, price, name, variant, brand, img } = product
-  const [inCart, setInCart] = useState(false)
+  const { id, offer, price, name, variant, img } = product
   const { setCart, cart } = useGlobalContext()
+  const [inCart, setInCart] = useState(false)
   const removeContainer = useRef(null)
   const addContainer = useRef(null)
 
@@ -62,8 +62,6 @@ const Items = ({ product }) => {
             <del>{offer ? `$${price}` : null}</del>
             <span> {offer ? `$${offer}` : `$${price}`}</span>
           </div>
-          <u>{offer ? 'special offer' : ''}</u>
-          <p>{brand}</p>
           <div className='featured-footer'>
             <span>Buy it now</span>
           </div>
@@ -76,7 +74,7 @@ const Items = ({ product }) => {
           ref={addContainer}
           data-id={id}
         >
-          <FaCartPlus /> <span>Add</span>
+          <FaCartPlus />
         </button>
         <button
           className='remove-cart'
@@ -84,7 +82,7 @@ const Items = ({ product }) => {
           data-id={id}
           ref={removeContainer}
         >
-          <FaCartPlus /> <span>Remove</span>
+          <span>in cart</span>
         </button>
       </div>
     </div>

@@ -13,6 +13,10 @@
   color: var(--main-primary-white);
 }
 
+.cart-icon {
+  color: var(--clr-grey-9);
+}
+
 @media screen and (min-width: 800px) {
   .items-in-cart {
     top: -12px;

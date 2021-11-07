@@ -28,7 +28,7 @@
 }
 
 .feature-img-box {
-  height: 150px;
+  height: 120px;
 }
 
 .feature-img-box img {
@@ -69,12 +69,12 @@
   padding: 0.25rem;
   letter-spacing: 0.1rem;
   border-radius: 5px;
-  background: var(--clr-secondary-5);
+  background: var(--clr-primary-3);
   transition: var(--transition);
 }
 
 .add-cart:hover {
-  background: var(--clr-primary-3);
+  background: var(--clr-primary-5);
   color: var(--clr-white);
 }
 .remove-cart:hover {
@@ -100,7 +100,7 @@
 
 @media screen and (min-width: 768px) {
   .feature-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 800px) {
@@ -116,5 +116,11 @@
     transform: scale(1);
     z-index: 1;
     visibility: visible;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-wrapper {
+    grid-template-columns: repeat(5, 1fr);
   }
 }

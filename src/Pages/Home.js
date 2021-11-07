@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import index.js the entrie point
 import Index from '../Component/Home-index/Index'
 // import from global store
 import { useGlobalContext } from '../Component/GlobalStore/Context'
 
 const Home = () => {
-  const { setIsSubmenuOpen } = useGlobalContext()
+  const { setIsSubmenuOpen, setInput } = useGlobalContext()
+
+  useEffect(() => {
+    setInput('')
+  }, [])
 
   return (
     // showing and removing submenu based on conditions

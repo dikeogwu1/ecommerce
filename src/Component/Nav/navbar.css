@@ -1,9 +1,13 @@
 .nav {
-  background: var(--clr-primary-3);
+  background-image: url('https://res.cloudinary.com/dikeogwu1/image/upload/v1636236735/my%20images/Hipster_summer_outdoors__24_copy_01.jpg_lrnwqn.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 0.5rem 1rem;
   margin-bottom: 0.25rem;
   position: relative;
   box-shadow: var(--light-shadow);
+  /* height: 200px; */
 }
 
 /* nav container */

@@ -41,6 +41,8 @@ const Featured = () => {
       })
       setCategory(search)
       setSubmit(true)
+    } else {
+      setCategory(ecommerce)
     }
     setShowCategories(false)
   }, [])

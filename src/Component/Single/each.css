@@ -1,0 +1,140 @@
+.single-container {
+  padding-top: 3rem;
+  background: var(--clr-white);
+}
+
+/* single item */
+
+.single-wrapper {
+  margin-bottom: 1rem;
+}
+
+.single-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.single-img-wrapper {
+  width: 100%;
+  height: 450px;
+  border-radius: var(--radius);
+}
+
+.single-img {
+  object-fit: contain;
+  border: 2px solid var(--main-primary-color-20);
+  border-radius: var(--radius);
+}
+
+.single-info h4 {
+  font-size: 1.25rem;
+  color: var(--clr-secondary-9);
+}
+
+.single-info h4 span {
+  font-size: 1rem;
+  color: var(--main-dark-color);
+}
+
+.single-info h4 small {
+  color: var(--main-primary-color-2);
+}
+
+/* single item button */
+
+.s-add-to-cart {
+  background: var(--main-primary-color-20);
+  color: var(--clr-white);
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  font-size: 1.25rem;
+  transition: var(--transition);
+}
+
+.s-add-to-cart:hover {
+  background: var(--clr-green-dark);
+}
+
+.single-design {
+  height: 200px;
+  background-image: url('https://res.cloudinary.com/dikeogwu1/image/upload/v1636237758/my%20images/source_fmsoel.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.design-text-wrapper {
+  text-align: center;
+}
+
+.single-design p {
+  color: var(--main-primary-color-20);
+}
+
+/* simillar products */
+
+.simillar-container {
+  padding: 0 1rem;
+}
+
+.simillar-container h3 {
+  margin: 1rem 0;
+}
+
+.simillar-box {
+  transition: var(--transition);
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.simillar-box:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.simillar-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.simillar-img-wrapper {
+  height: 100px;
+}
+
+.simillar-img {
+  object-fit: contain;
+}
+
+@media screen and (min-width: 350px) {
+  .simillar-container {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .single-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .simillar-wrap {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .simillar-wrap {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .simillar-wrap {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
