@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     setInput('')
-  }, [])
+  }, [setInput])
 
   return (
     // showing and removing submenu based on conditions

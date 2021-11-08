@@ -15,6 +15,7 @@ import Signin from './Pages/Signin'
 import Error from './Pages/Home'
 import SingleItem from './Pages/SingleItem'
 import Cart from './Pages/Cart'
+import PopullarCategory from './Pages/PopullarCategory'
 
 const App = () => {
   return (
@@ -73,6 +74,9 @@ const App = () => {
 
         {/* Item info page */}
         <Route path='/singleItem/:id' children={<SingleItem />} />
+
+        {/* Popullar category page */}
+        <Route path='/popullar/:id' children={<PopullarCategory />} />
 
         {/* Error page */}
         <Route path='*'>

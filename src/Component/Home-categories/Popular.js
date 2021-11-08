@@ -18,8 +18,9 @@ const Popular = () => {
       <section className='popular-cate-wrapper'>
         {popular.map((data, index) => {
           const { variant, img } = data
+          const page = variant.trim()
           return (
-            <Link key={index} className='popular' to={`singleItem/${variant}`}>
+            <Link key={index} className='popular' to={`popullar/${page}`}>
               <div className='popular-img-box'>
                 <img src={img} alt={variant} className='popular-img' />
               </div>

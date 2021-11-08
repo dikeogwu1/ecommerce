@@ -669,7 +669,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635428144/my%20images/s-l225_nwfxwn.webp`,
     price: 57.18,
     offer: 9.34,
-    shiping: `$free shipping`,
+    shiping: `$free shipping to any`,
   },
   {
     id: 52,
