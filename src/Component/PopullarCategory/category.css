@@ -1,0 +1,55 @@
+.pop-category-container h1 {
+  color: var(--main-primary-color-10);
+  padding-left: 2rem;
+  height: 150px;
+  background-image: url('https://res.cloudinary.com/dikeogwu1/image/upload/v1636238145/my%20images/_DSC5175.jpg_g4kx8n.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.pop-category-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0 3rem;
+  margin-top: 2rem;
+}
+
+.pop-items {
+  transition: var(--transition);
+  background: var(--clr-white);
+  padding: 0 0.25rem;
+}
+
+.pop-items h4 {
+  color: var(--main-primary-color-15);
+  margin-top: 0.25rem;
+}
+.pop-items p {
+  color: var(--main-primary-color-10);
+}
+
+.pop-items:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.pop-category-ing-wrapper {
+  height: 200px;
+}
+
+.pop-category-ing-wrapper img {
+  object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .pop-category-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 800px) {
+  .pop-category-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

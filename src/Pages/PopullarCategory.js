@@ -1,10 +1,20 @@
 import React from 'react'
 import Category from '../Component/PopullarCategory/Category'
+// import carousel
+import Carousel from '../Component/Carousel/Carousel'
+// import Footer
+import Footer from '../Component/Footer/Footer'
+// import from global store
+import { useGlobalContext } from '../Component/GlobalStore/Context'
 
 const PopullarCategory = () => {
+  const { setIsSubmenuOpen, setInput } = useGlobalContext()
+
   return (
-    <div>
+    <div onMouseOver={() => setIsSubmenuOpen(false)}>
+      <Carousel />
       <Category />
+      <Footer />
     </div>
   )
 }
