@@ -11,6 +11,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635423628/my%20images/s-l225_mv7sji.webp`,
     price: 6.99,
     shiping: '0 bids · Time left3d 18h+$12.99 shippingfrom China',
+    amount: 0,
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const ecommerce = [
     price: 21.3,
     shiping: `Buy It Now+$4.86 shippingfrom United Kingdom
 `,
+    amount: 0,
   },
   // do change the img url
   {
@@ -39,6 +41,7 @@ export const ecommerce = [
     offer: 19.05,
     shiping: `Buy It Now+$4.86 shippingfrom United Kingdom
 `,
+    amount: 0,
   },
   {
     id: 4,
@@ -52,6 +55,7 @@ export const ecommerce = [
     price: 21.23,
     shiping: `Buy It Now+$11.86 shippingfrom United Kingdom
 `,
+    amount: 0,
   },
   {
     id: 5,
@@ -65,6 +69,7 @@ export const ecommerce = [
     price: 18.13,
     shiping: `Buy It Now+$11.26 shippingfrom United Kingdom
 `,
+    amount: 0,
   },
   {
     id: 6,
@@ -79,6 +84,7 @@ export const ecommerce = [
     offer: 80.61,
     shiping: `Buy It Now+$9.26 shippingfrom United Kingdom
 `,
+    amount: 0,
   },
   {
     id: 7,
@@ -89,10 +95,11 @@ export const ecommerce = [
 `,
     brand: 'brand new',
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635424023/my%20images/s-l225_vvbmdd.webp`,
-    price: 34.43,
-    offer: 17.0,
+    offer: 17.23,
+    price: 34.5,
     shiping: `Buy It Now+$9.59 shippingfrom United Kingdom
 `,
+    amount: 0,
   },
   {
     id: 8,
@@ -106,6 +113,7 @@ export const ecommerce = [
     price: 14.43,
     shiping: `Buy It Now+$31.29 shippingfrom United Kingdom
 `,
+    amount: 0,
   },
   // wonem clothing
   {
@@ -119,6 +127,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635423386/my%20images/s-l225_zzzima.webp`,
     price: 19.99,
     offer: 8.7,
+    amount: 0,
     shiping: `or Best OfferShipping not specifiedfrom United States
 `,
   },
@@ -134,6 +143,7 @@ export const ecommerce = [
     price: 16.43,
     shiping: `0 bids · Time left9d 6h+$28.00 shippingfrom United States
 `,
+    amount: 0,
   },
   {
     id: 11,
@@ -146,6 +156,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635422869/my%20images/s-l225_qwmn5q.webp`,
     price: 19.43,
     shiping: `0 bids · Time left9d 6h+$28.00 shippingfrom United States`,
+    amount: 0,
   },
   {
     id: 12,
@@ -159,6 +170,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635422837/my%20images/s-l225_mqiygb.webp`,
     price: 21.47,
     shiping: `0 bids · Time left5d 14hFree International Shippingfrom IndiaFree returns`,
+    amount: 0,
   },
   {
     id: 13,
@@ -171,6 +183,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635422776/my%20images/s-l225_cg5zhp.webp`,
     price: 22.99,
     shiping: `0 bids · Time left5d 14hFree International Shippingfrom IndiaFree returns`,
+    amount: 0,
   },
   {
     id: 14,
@@ -183,6 +196,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635422704/my%20images/s-l225_ncf3iq.webp`,
     price: 123.59,
     shiping: `Buy It NowFree International Shippingfrom JapanFree returns`,
+    amount: 0,
   },
   {
     id: 15,
@@ -196,6 +210,7 @@ export const ecommerce = [
     price: 171.48,
     offer: 153.76,
     shiping: `Buy It NowFree International Shippingfrom JapanFree returns`,
+    amount: 0,
   },
   {
     id: 16,
@@ -208,6 +223,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635422555/my%20images/s-l225_dat5pf.webp`,
     price: 24.49,
     shiping: `Buy It Now+$24.23 shippingfrom United States`,
+    amount: 0,
   },
   {
     id: 17,
@@ -221,6 +237,7 @@ export const ecommerce = [
     price: 224.88,
     offer: 121.48,
     shiping: `Buy It NowFree International Shippingfrom JapanFree returns`,
+    amount: 0,
   },
   {
     id: 18,
@@ -232,6 +249,7 @@ export const ecommerce = [
     brand: `Pre-Owned`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635423332/my%20images/s-l225_bi9awp.webp`,
     price: 9.78,
+    amount: 0,
     shiping: `Free International Shippingfrom China`,
   },
   {
@@ -244,6 +262,7 @@ export const ecommerce = [
     brand: `Pre-Owned`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635423175/my%20images/s-l225_zrzmrq.webp`,
     price: 19.68,
+    amount: 0,
     shiping: `or Best Offer+$25.50 shippingfrom United States`,
   },
   {
@@ -258,6 +277,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635423123/my%20images/s-l225_igd76m.webp`,
     price: 45.61,
     offer: 25.98,
+    amount: 0,
     shiping: `or Best Offer+$25.50 shippingfrom United States`,
   },
   {
@@ -271,6 +291,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635423069/my%20images/s-l225_rvzfip.webp`,
     price: 14.99,
     offer: 9.91,
+    amount: 0,
     shiping: `or Best Offer+$11.20 shippingfrom United States`,
   },
   {
@@ -284,6 +305,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635423028/my%20images/s-l225_maqibi.webp`,
     price: 13.19,
     offer: 8.54,
+    amount: 0,
     shiping: `Buy It Now+$6.21 shippingfrom United Kingdom`,
   },
   // bages
@@ -301,6 +323,7 @@ export const ecommerce = [
     offer: 18.66,
     shiping: `Buy It NowShipping not specifiedfrom United KingdomLast one
 `,
+    amount: 0,
   },
   {
     id: 24,
@@ -314,6 +337,7 @@ export const ecommerce = [
     price: 71.29,
     shiping: `Buy It Now+$20.81 shippingfrom United Kingdom
 `,
+    amount: 0,
   },
   {
     id: 25,
@@ -327,6 +351,7 @@ export const ecommerce = [
     price: 60.21,
     shiping: `Buy It Now+$8.27 shippingfrom India
 `,
+    amount: 0,
   },
   {
     id: 26,
@@ -341,6 +366,7 @@ export const ecommerce = [
     offer: 90.31,
     shiping: `Buy It Now+$20.63 shippingfrom United Kingdom
 `,
+    amount: 0,
   },
   {
     id: 27,
@@ -355,6 +381,7 @@ export const ecommerce = [
     offer: 26.67,
     shiping: `or Best Offer+$41.03 shippingfrom Australia
 `,
+    amount: 0,
   },
   // men bag
   {
@@ -370,6 +397,7 @@ export const ecommerce = [
     price: 37.97,
     shiping: `Buy It NowFree International Shippingfrom Korea, South
 `,
+    amount: 0,
   },
   {
     id: 29,
@@ -383,6 +411,7 @@ export const ecommerce = [
     price: 129.37,
     shiping: `Buy It NowShipping not specifiedfrom Italy
 `,
+    amount: 0,
   },
   {
     id: 30,
@@ -397,6 +426,7 @@ export const ecommerce = [
     offer: 75.31,
     shiping: `Buy It Now+$63.37 shippingfrom Germany
 `,
+    amount: 0,
   },
   // women foot wear
   {
@@ -412,6 +442,7 @@ export const ecommerce = [
     offer: 6.99,
     shiping: `or Best Offer+$25.50 shippingfrom United States
 `,
+    amount: 0,
   },
   {
     id: 32,
@@ -426,6 +457,7 @@ export const ecommerce = [
     price: 6.32,
     shiping: `or Best Offer+$25.50 shippingfrom United States
 `,
+    amount: 0,
   },
   {
     id: 33,
@@ -440,6 +472,7 @@ export const ecommerce = [
     offer: 10.6,
     shiping: `or Best Offer+$16.99 shippingfrom United States
 `,
+    amount: 0,
   },
   {
     id: 34,
@@ -453,6 +486,7 @@ export const ecommerce = [
     price: 26.16,
     shiping: `or Best Offer+$14.99 shippingfrom United States
 `,
+    amount: 0,
   },
   // boys canverse
   {
@@ -467,6 +501,7 @@ export const ecommerce = [
     price: 126.13,
     shiping: `or Best Offer+$14.99 shippingfrom United States
 `,
+    amount: 0,
   },
   {
     id: 36,
@@ -478,6 +513,7 @@ export const ecommerce = [
     brand: `Brand New`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635425477/my%20images/s-l225_pbbkgm.webp`,
     price: 140.99,
+    amount: 0,
     shiping: `Free International Shippingfrom United Kingdom`,
   },
   {
@@ -490,6 +526,7 @@ export const ecommerce = [
     brand: `Brand New`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635425295/my%20images/erik-mclean-373OIVzuB5U-unsplash_tjqows.jpg`,
     price: 120.79,
+    amount: 0,
     shiping: `Free International Shippingfrom United Kingdom`,
   },
   {
@@ -503,6 +540,7 @@ export const ecommerce = [
     brand: `Brand New`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635425074/my%20images/daniel-storek-JM-qKEd1GMI-unsplash_gx0edj.jpg`,
     price: 147.71,
+    amount: 0,
     shiping: `Buy It Now+$10.01 shippingfrom United States`,
   },
   {
@@ -516,6 +554,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635424962/my%20images/s-l225_jdyzad.webp`,
     price: 100.61,
     offer: 19.61,
+    amount: 0,
     shiping: `or Best OfferShipping not specifiedfrom United Kingdom`,
   },
   // men sheos
@@ -529,6 +568,7 @@ export const ecommerce = [
     brand: `Brand New`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635424801/my%20images/s-l225_soeryw.webp`,
     price: 155.69,
+    amount: 0,
     shiping: `or Best OfferShipping not specifiedfrom United Kingdom`,
   },
   {
@@ -541,6 +581,7 @@ export const ecommerce = [
     brand: `New (Other)`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635424734/my%20images/s-l225_sh1vfs.webp`,
     price: 155.69,
+    amount: 0,
     shiping: `Buy It Now+$5.00 shippingfrom China`,
   },
   {
@@ -554,6 +595,7 @@ export const ecommerce = [
     brand: `New (Other)`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635424667/my%20images/s-l225_wqmc4y.webp`,
     price: 155.69,
+    amount: 0,
     shiping: `Buy It NowShipping not specifiedfrom United Kingdom`,
   },
   {
@@ -567,6 +609,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635424570/my%20images/s-l225_luoxqy.webp`,
     price: 155.69,
     offer: 5.69,
+    amount: 0,
     shiping: `Buy It Now+$22.06 shippingfrom China`,
   },
 
@@ -584,6 +627,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635426766/my%20images/s-l300_xlvcue.webp`,
     price: 59.6,
     shiping: ``,
+    amount: 0,
   },
   {
     id: 45,
@@ -596,6 +640,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635427034/my%20images/s-l300_adnosx.webp`,
     price: 219.6,
     shiping: `$20.70 shipping`,
+    amount: 0,
   },
   {
     id: 46,
@@ -608,6 +653,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635427627/my%20images/s-l225_ng0ozi.webp`,
     price: 180.6,
     shiping: `$5.70 shipping`,
+    amount: 0,
   },
   // black leather watch
   {
@@ -621,6 +667,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635426899/my%20images/s-l300_qmvvip.webp`,
     price: 180.6,
     shiping: `$12.07 shipping`,
+    amount: 0,
   },
   {
     id: 48,
@@ -633,6 +680,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635427142/my%20images/s-l300_jmuq4e.webp`,
     price: 582.25,
     shiping: `$11.00 shipping`,
+    amount: 0,
   },
   {
     id: 49,
@@ -645,6 +693,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635427262/my%20images/s-l300_racr0e.webp`,
     price: 371.45,
     shiping: `$19.20 shipping`,
+    amount: 0,
   },
   {
     id: 50,
@@ -658,6 +707,7 @@ export const ecommerce = [
     price: 79.11,
     offer: 49.1,
     shiping: `$25.50 shipping or Best Offer`,
+    amount: 0,
   },
   {
     id: 51,
@@ -670,6 +720,7 @@ export const ecommerce = [
     price: 57.18,
     offer: 9.34,
     shiping: `$free shipping to any`,
+    amount: 0,
   },
   {
     id: 52,
@@ -683,6 +734,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635428244/my%20images/s-l225_pwqjoc.webp`,
     price: 57.18,
     shiping: `free shipping `,
+    amount: 0,
   },
   // random color watch
   {
@@ -696,6 +748,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635427369/my%20images/s-l300_gpxwhe.webp`,
     price: 159.16,
     shiping: `$13.12 shipping `,
+    amount: 0,
   },
   {
     id: 54,
@@ -708,6 +761,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635427472/my%20images/s-l225_ebaeqx.webp`,
     price: 160.32,
     shiping: `$13.12 shipping `,
+    amount: 0,
   },
   {
     id: 55,
@@ -720,6 +774,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635427894/my%20images/s-l225_ru8lkr.jpg`,
     price: 173.98,
     shiping: `$15.18 shipping or Best Offer `,
+    amount: 0,
   },
   {
     id: 56,
@@ -732,6 +787,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635427767/my%20images/s-l640_txc6gj.jpg`,
     price: 375.26,
     shiping: `$17.00 shipping or Best Offer `,
+    amount: 0,
   },
   // mobile phone
 
@@ -747,6 +803,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635428338/my%20images/s-l200_ufqdcr.jpg`,
     price: 155.16,
     offer: 47.13,
+    amount: 0,
     shiping: `Buy It Now, Free International Shipping from India `,
   },
   // iphone
@@ -761,6 +818,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635428461/my%20images/s-l225_qujefy.webp`,
     price: 555.46,
     shiping: `+$13.30 shippingfrom Germany `,
+    amount: 0,
   },
   {
     id: 59,
@@ -774,6 +832,7 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635428606/my%20images/s-l225_xzbpuv.webp`,
     price: 622.35,
     offer: 180.05,
+    amount: 0,
     shiping: `or Best OfferShipping not specified from United Kingdom `,
   },
   {
@@ -786,6 +845,7 @@ export const ecommerce = [
     brand: `New (other)`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635430095/my%20images/photo-1624006930503-6d20b0717097_r8uqu0.jpg`,
     price: 622.35,
+    amount: 0,
     shiping: `Free International Shipping from United States `,
   },
   // samsung
@@ -799,6 +859,7 @@ export const ecommerce = [
     brand: `New`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635428732/my%20images/s-l225_vksvjt.webp`,
     price: 690.75,
+    amount: 0,
     shiping: `or Best OfferShipping not specified from United Kingdom `,
   },
   {
@@ -811,6 +872,7 @@ export const ecommerce = [
     brand: `brand new`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635428872/my%20images/photo-1597762470488-3877b1f538c6_a8yufu.jpg`,
     price: 320.15,
+    amount: 0,
     shiping: `Buy It Now+$59.95 shipping from United States `,
   },
   {
@@ -825,5 +887,6 @@ export const ecommerce = [
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635429034/my%20images/photo-1555774698-0b77e0d5fac6_hatywt.jpg`,
     price: 510.44,
     shiping: `Buy It NowFree International Shipping from United Kingdom`,
+    amount: 0,
   },
 ]

@@ -9,6 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     setInput('')
+    window.scrollTo({ top: 0 })
   }, [setInput])
 
   return (

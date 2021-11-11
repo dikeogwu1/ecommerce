@@ -51,10 +51,14 @@ const Each = () => {
     cart.map((item) => {
       if (item.id === newId) {
         setInCart(true)
+      } else {
+        setInCart(false)
       }
       return item
     })
-  }, [newId, cart])
+
+    window.scrollTo({ top: 0 })
+  }, [id, cart])
   // add item to cart function
   const addToCart = (e) => {
     setInCart(true)

@@ -16,7 +16,7 @@ const WristWatches = () => {
 
   return (
     <div>
-      <Link className='wrist-watch-news' to={`singleItem/wrist watch`}>
+      <Link className='wrist-watch-news' to={`popullar/Wrist watch`}>
         <div>
           <h3>Looking for Wristwatches?</h3>
           <p>Check new items now! Great offers and limited deals</p>

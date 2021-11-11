@@ -1,7 +1,6 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext, useEffect, useReducer } from 'react'
 // imoprt ecommerce store
 import { ecommerce } from '../Lib/ecommerceData'
-
 export const globalStore = React.createContext()
 
 const getLocalStorage = () => {
@@ -20,16 +19,15 @@ const Context = ({ children }) => {
   const [cart, setCart] = useState(getLocalStorage())
   const [input, setInput] = useState('')
   const [submit, setSubmit] = useState(false)
+  const [items, setItems] = useState([])
+  const [isRegistered, setIsRegistered] = useState(false)
+  const [registration, setRegistration] = useState(false)
 
   useEffect(() => {
     localStorage.setItem('list', JSON.stringify(cart))
+    const cate = new Set(ecommerce.map((item) => item.variant))
+    setItems([...cate])
   }, [cart])
-
-  const getSingle = ecommerce.map((single) => {
-    return single.variant
-  })
-  const check = new Set(getSingle)
-  const items = [...check]
 
   return (
     <globalStore.Provider
@@ -47,6 +45,10 @@ const Context = ({ children }) => {
         submit,
         setSubmit,
         items,
+        isRegistered,
+        setIsRegistered,
+        registration,
+        setRegistration,
       }}
     >
       {children}
