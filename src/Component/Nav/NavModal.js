@@ -1,12 +1,12 @@
 import React from 'react'
-import { FaTimes } from 'react-icons/all'
+import { FaTimes, FaUser } from 'react-icons/all'
 import { Link } from 'react-router-dom'
 // import nav links data
 import sublinks from './navData'
 // import from global store
 import { useGlobalContext } from '../GlobalStore/Context'
 const NavModal = () => {
-  const { isModalOpen, setIsModalOpen } = useGlobalContext()
+  const { isModalOpen,person, setIsModalOpen, registration } = useGlobalContext()
 
   return (
     <aside className={isModalOpen ? 'nav-modal show-modal' : 'nav-modal'}>
@@ -43,13 +43,19 @@ const NavModal = () => {
           })}
           {/* link to sign in page */}
           <li>
-            <Link
-              to='/signin'
-              className='signin'
-              onClick={() => setIsModalOpen(false)}
-            >
-              Sign in
-            </Link>
+            {!registration ? (
+              <Link
+                to='/signin'
+                className='signin'
+                onClick={() => setIsModalOpen(false)}
+              >
+                Sign in
+              </Link>
+            ) : (
+              <h4 className='user'>
+                <FaUser /> <span>{person}</span>
+              </h4>
+            )}
           </li>
         </ul>
       </div>

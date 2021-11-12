@@ -11,6 +11,14 @@ const getLocalStorage = () => {
     return []
   }
 }
+const getName = () => {
+  let person = localStorage.getItem('personName')
+  if (person) {
+    return (person = JSON.parse(localStorage.getItem('personName')))
+  } else {
+    return ''
+  }
+}
 
 const Context = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -22,12 +30,15 @@ const Context = ({ children }) => {
   const [items, setItems] = useState([])
   const [isRegistered, setIsRegistered] = useState(false)
   const [registration, setRegistration] = useState(false)
+  const [orderModal, setOrderModal] = useState(false)
+  const [person, setPerson] = useState(getName())
 
   useEffect(() => {
     localStorage.setItem('list', JSON.stringify(cart))
+    localStorage.setItem('personName', JSON.stringify(person))
     const cate = new Set(ecommerce.map((item) => item.variant))
     setItems([...cate])
-  }, [cart])
+  }, [cart, person])
 
   return (
     <globalStore.Provider
@@ -49,6 +60,10 @@ const Context = ({ children }) => {
         setIsRegistered,
         registration,
         setRegistration,
+        orderModal,
+        setOrderModal,
+        person,
+        setPerson,
       }}
     >
       {children}

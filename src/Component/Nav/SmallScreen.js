@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { FaBars } from 'react-icons/all'
+import { FaBars, FaUser } from 'react-icons/all'
 import { Link } from 'react-router-dom'
 // imported the component holding the amount of items in cart
 import CartItem from '../InCart/CartItem'
@@ -15,7 +15,14 @@ const SmallScreen = () => {
     { page: '', text: '', links: [{ label: '', icon: null }] },
   ])
   const subContainer = useRef(null)
-  const { isSubmenuOpen, setIsSubmenuOpen, setIsModalOpen } = useGlobalContext()
+  const {
+    isSubmenuOpen,
+    person,
+    setIsSubmenuOpen,
+    setIsModalOpen,
+    registration,
+    setRegistration
+  } = useGlobalContext()
 
   // function to run when over on nav links
   const checkProduct = (e) => {
@@ -43,6 +50,12 @@ const SmallScreen = () => {
       setSingleItem([category])
     }
   }, [navItem, modalMover.clientCenter, modalMover.clientHeight])
+
+  useEffect(()=>{
+if (person) {
+  setRegistration(true)
+}
+  },[])
 
   // showing and removing submenu based on conditions
   const removeSubmenu = (e) => {
@@ -93,9 +106,15 @@ const SmallScreen = () => {
           </div>
           {/* link to sign in page */}
           <li>
-            <Link to='/signin' className='signin-link'>
-              Sign in
-            </Link>
+            {!registration ? (
+              <Link to='/signin' className='signin-link'>
+                Register
+              </Link>
+            ) : (
+              <h4 className='user'>
+                <FaUser /> <span>{person}</span>
+              </h4>
+            )}
           </li>
         </ul>
         {/* showing the amount of item in cart */}

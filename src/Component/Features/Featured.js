@@ -65,8 +65,6 @@ const Featured = () => {
   const handleOver = (e) => {
     if (!e.target.classList.contains('sub')) {
       setShowCategories(false)
-    } else {
-      setShowCategories(true)
     }
   }
 
@@ -74,6 +72,7 @@ const Featured = () => {
   const handleCategory = (e) => {
     const items = e.currentTarget.textContent
     setInput(items)
+    setShowCategories(false)
     setSubmit(true)
     const check = ecommerce.filter((item) => {
       return item.variant === items

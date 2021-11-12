@@ -1,12 +1,17 @@
 import React from 'react'
 import Footer from '../Component/Footer/Footer'
+import SigninItem from '../Component/SignIn/SigninItem'
+// import from global store
+import { useGlobalContext } from '../Component/GlobalStore/Context'
 
 const Signin = () => {
+  const { setIsSubmenuOpen } = useGlobalContext()
+
   return (
-    <div>
-      <h1>Sign in</h1>
+    <main onMouseOver={() => setIsSubmenuOpen(false)}>
+      <SigninItem />
       <Footer />
-    </div>
+    </main>
   )
 }
 

@@ -22,7 +22,7 @@ const SubCart = ({ single, value, setValue }) => {
     setValue(total)
   }, [])
 
-  // console.log(amount)
+  // delete item from cart
   const deleteItem = (e) => {
     const itemId = parseInt(e.currentTarget.dataset.id)
     const fill = cart.filter((item) => item.id !== itemId)
@@ -60,7 +60,6 @@ const SubCart = ({ single, value, setValue }) => {
         return arr + price
       }, 0)
     setValue(value + lookin)
-    console.log(lookin)
   }
 
   return (

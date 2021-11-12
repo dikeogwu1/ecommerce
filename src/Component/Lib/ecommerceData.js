@@ -313,7 +313,7 @@ export const ecommerce = [
     id: 23,
     category: 'offer',
     type: 'party bag',
-    variant: 'Ladies bag',
+    variant: 'Ladies Bag',
     popular: true,
     name: `Women's Girls Ladies Oxford Backpack Rucksack Travel Shoulder School Bag
 `,
@@ -329,7 +329,7 @@ export const ecommerce = [
     id: 24,
     category: 'normal',
     type: 'ladies sholder bag',
-    variant: 'Ladies bag',
+    variant: 'Ladies Bag',
     name: `Ladies Remonte Shoulder Bag Q0390
 `,
     brand: `brand new`,
@@ -343,8 +343,8 @@ export const ecommerce = [
     id: 25,
     category: 'normal',
     type: 'hand bag',
-    variant: 'Ladies bag',
-    name: `Ladies Tote Shoulder Bag Satchel Genuine Leather Vintage Brown Handmade Handbag
+    variant: 'Ladies Bag',
+    name: `Ladies Tote Shoulder Bags Satchel Genuine Leather Vintage Brown Handmade Handbag
 `,
     brand: `brand new`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635421249/my%20images/s-l225_idwgpm.webp`,
@@ -356,9 +356,9 @@ export const ecommerce = [
   {
     id: 26,
     category: 'offer',
-    type: 'ladies sholder bag',
+    type: 'ladies sholder Bag',
     variant: 'Ladies bag',
-    name: `Ladies Bagzone Hand Bag Beige Leather Look RRP £25
+    name: `Ladies Bagzone Hand Bags Beige Leather Look RRP £25
 `,
     brand: `new (other)`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635421174/my%20images/s-l225_gg05lj.webp`,
@@ -371,9 +371,9 @@ export const ecommerce = [
   {
     id: 27,
     category: 'offer',
-    type: 'ladies sholder bag',
+    type: 'ladies sholder Bag',
     variant: 'Ladies bag',
-    name: `XS BAGGAGE LEATHER LADIES BAG SIZE 34X28 CM
+    name: `XS BAGGAGE LEATHER LADIES Bags SIZE 34X28 CM
 `,
     brand: `new (other)`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635421105/my%20images/s-l225_nxy65r.webp`,
@@ -404,7 +404,7 @@ export const ecommerce = [
     category: 'normal',
     type: 'men sholder bag',
     variant: 'Men bag',
-    name: `PIQUADRO men's blue leather business office laptop 15" bag briefcase NEW
+    name: `PIQUADRO men's blue leather business office laptop 15" Bags briefcase NEW
 `,
     brand: `brand new`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635420894/my%20images/s-l225_kgq66p.webp`,
@@ -416,9 +416,9 @@ export const ecommerce = [
   {
     id: 30,
     category: 'offer',
-    type: 'men sholder bag',
+    type: 'men Sholder bag',
     variant: 'Men bag',
-    name: `SOCHA Men's Bag Notebook Business 6 Large Fan Briefcase Office Bag
+    name: `SOCHA Men's Bags Notebook Business 6 Large Fan Briefcase Office Bag
 `,
     brand: `new (other)`,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635420811/my%20images/s-l225_u0mjdu.webp`,
@@ -795,7 +795,7 @@ export const ecommerce = [
   {
     id: 57,
     category: 'offer',
-    variant: 'Mobile phone',
+    variant: 'Mobile Phone',
     type: 'redmi',
     name: `Redmi 9 4GB RAM 64 GB Carbon Black Factory Unlocked-NV9
 `,
@@ -810,7 +810,7 @@ export const ecommerce = [
   {
     id: 58,
     category: 'deal',
-    variant: 'Mobile phone',
+    variant: 'Mobile Phone',
     type: 'iphone',
     name: `Apple Iphone 11 Pro Max - 64GB-Gold (without Simlock) A2218 (CDMA + GSM)
 `,
@@ -823,7 +823,7 @@ export const ecommerce = [
   {
     id: 59,
     category: 'offer',
-    variant: 'Mobile phone',
+    variant: 'Mobile Phone',
     review: true,
     type: 'iphone',
     name: `Apple Iphone 11 Pro - 256GB - Space Grey (Unlocked) A2215 (CDMA + GSM)
@@ -838,7 +838,7 @@ export const ecommerce = [
   {
     id: 60,
     category: 'normal',
-    variant: 'Mobile phone',
+    variant: 'Mobile Phone',
     type: 'iphone',
     name: `Iphone X - 64GB - Silver (Unlocked) A1865 (CDMA + GSM)
 `,
@@ -852,7 +852,7 @@ export const ecommerce = [
   {
     id: 61,
     category: 'normal',
-    variant: 'Mobile phone',
+    variant: 'Mobile Phone',
     type: 'samsung',
     name: `Samsung Galaxy A71 5G, 128GB - Prism Cube Black (Factory Unlocked) NEW!
 `,
@@ -865,7 +865,7 @@ export const ecommerce = [
   {
     id: 62,
     category: 'normal',
-    variant: 'Mobile phone',
+    variant: 'Mobile Phone',
     type: 'samsung',
     name: ` Samsung Galaxy A52 5G A526U 128GB T-Mobile ONLY Smartphone Cellphone Y147
 `,
@@ -878,7 +878,7 @@ export const ecommerce = [
   {
     id: 63,
     category: 'normal',
-    variant: 'Mobile phone',
+    variant: 'Mobile Phone',
     popular: true,
     type: 'samsung',
     name: ` Samsung Galaxy S20 FE 5G - 128GB 256GB Unlocked All Colours Very Good Condition

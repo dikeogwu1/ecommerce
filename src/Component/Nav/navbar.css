@@ -45,6 +45,10 @@
   color: var(--clr-green-dark);
 }
 
+.user {
+  margin-top: 0.5rem;
+}
+
 /* style for nav bars icon */
 .bars-btn,
 .cart-btn {
@@ -149,6 +153,8 @@ NAV MODAL FOR SMALL SCREEN
   margin-left: 3rem;
   transition: var(--transition);
   color: var(--clr-red-dark);
+  font-size: 1.25rem;
+  font-family: var(--ff-primary);
 }
 
 .signin:hover {

@@ -1,0 +1,150 @@
+.register-container {
+  width: 90vw;
+  background: var(--clr-white);
+  margin: 3rem auto;
+  box-shadow: var(--dark-shadow);
+  padding: 2rem 3rem;
+}
+
+/* registration modal */
+
+.reg-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.329);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.show-reg-modal {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reg-modal-wrapper {
+  background: var(--clr-white);
+  width: 80%;
+  height: 50%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.reg-modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+}
+
+.reg-modal-text p {
+  color: var(--clr-grey-5);
+  font-size: 1.5rem;
+}
+
+.reg-modal-btn {
+  width: 100%;
+  text-transform: capitalize;
+  color: var(--clr-green-dark);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  font-size: 1.75rem;
+  transition: var(--transition);
+}
+
+.reg-modal-btn:hover {
+  background: var(--main-primary-color-10);
+}
+
+/* registration tittle */
+.register-tittle {
+  text-align: center;
+}
+
+.register-tittle h2 {
+  font-family: var(--ff-primary);
+  margin-bottom: 1rem;
+  color: var(--clr-black);
+  font-size: 3.25rem;
+}
+
+.register-tittle p {
+  font-size: 1.5rem;
+  color: var(--clr-grey-5);
+}
+
+/* registration form */
+
+.registration-form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.registration-form label {
+  color: var(--main-dark-color);
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.first-input-group input {
+  display: block;
+  /* border: none; */
+  border-radius: 5px;
+  box-shadow: var(--light-shadow);
+  width: 100%;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.radio-input input {
+  margin-right: 1rem;
+}
+
+.radio-input label {
+  margin-right: 0.1rem;
+}
+
+.submit-register {
+  width: 100%;
+  margin-top: 2rem;
+  background: var(--main-doll-red-color-7);
+  text-transform: capitalize;
+  color: var(--main-primary-white);
+  border-radius: var(--radius);
+  padding: 1rem;
+  font-size: 1.75rem;
+  transition: var(--transition);
+}
+
+.submit-register:hover {
+  background: #a93f54c2;
+  color: var(--clr-black);
+}
+
+.error-alert {
+  color: var(--clr-red-dark);
+}
+
+@media screen and (min-width: 800px) {
+  .register-container {
+    width: 60vw;
+  }
+
+  .reg-modal-wrapper {
+    width: 50%;
+  }
+
+  .registration-form {
+    width: 70%;
+  }
+}
