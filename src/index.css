@@ -45,6 +45,7 @@ Variables
   --clr-secondary-10: hsl(205, 100%, 96%);
 
   /* grey used for paragraphs */
+  --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);

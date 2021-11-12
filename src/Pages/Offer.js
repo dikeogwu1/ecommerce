@@ -1,12 +1,17 @@
 import React from 'react'
 import Footer from '../Component/Footer/Footer'
+import SpecialOffer from '../Component/Offer/SpecialOffer'
+// import from global store
+import { useGlobalContext } from '../Component/GlobalStore/Context'
 
 const Offer = () => {
+  const { setIsSubmenuOpen } = useGlobalContext()
+
   return (
-    <div>
-      <h1>special offer</h1>
+    <main onMouseOver={() => setIsSubmenuOpen(false)}>
+      <SpecialOffer />
       <Footer />
-    </div>
+    </main>
   )
 }
 

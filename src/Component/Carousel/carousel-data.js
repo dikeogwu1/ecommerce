@@ -18,7 +18,7 @@ export const carouselData = [
   },
   {
     id: 2,
-    title: 'are you intrested in todays deal ?',
+    title: 'explor the box of varaities and quality ?',
     desc: `Giving back to our customers is our litte way of appreciaton for petronage`,
     btn: 'More about deals',
     icon: <FaArrowRight />,
