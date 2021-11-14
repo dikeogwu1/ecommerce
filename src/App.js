@@ -10,7 +10,6 @@ import Offer from './Pages/Offer'
 import Features from './Pages/Features'
 import Help from './Pages/Help'
 import Contact from './Pages/Contact'
-import OderHistory from './Pages/OderHistory'
 import Signin from './Pages/Signin'
 import Error from './Pages/Home'
 import SingleItem from './Pages/SingleItem'
@@ -51,11 +50,6 @@ const App = () => {
         {/* Features page */}
         <Route path='/features'>
           <Features />
-        </Route>
-
-        {/* Oder history page */}
-        <Route path='/oderHistory'>
-          <OderHistory />
         </Route>
 
         {/* sign in page */}

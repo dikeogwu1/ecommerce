@@ -1,0 +1,48 @@
+.about-container {
+  margin: 3rem;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+  margin-bottom: 6rem;
+}
+
+.about-img-wrapper {
+  height: 340px;
+}
+
+.about-desc p,
+.about-history p {
+  font-size: 1.1rem;
+  color: var(--clr-grey-5);
+}
+
+.thanks {
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+
+  margin: 4rem auto;
+}
+
+.thanks p {
+  font-size: 1.1rem;
+}
+
+.helping-hands {
+  color: var(--main-primary-color-18);
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about-intro {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .thanks {
+    text-align: start;
+    width: 50%;
+  }
+}

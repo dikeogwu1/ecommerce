@@ -1,12 +1,17 @@
 import React from 'react'
+import About from '../Component/About/About'
 import Footer from '../Component/Footer/Footer'
+// import from global store
+import { useGlobalContext } from '../Component/GlobalStore/Context'
 
 const AboutUs = () => {
+  const { setIsSubmenuOpen } = useGlobalContext()
+
   return (
-    <div>
-      <h1>about us</h1>
+    <main onMouseOver={() => setIsSubmenuOpen(false)}>
+      <About />
       <Footer />
-    </div>
+    </main>
   )
 }
 
