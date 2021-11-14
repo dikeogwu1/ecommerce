@@ -63,7 +63,7 @@
   transform: translateY(100%);
   right: 0;
   width: fit-content;
-  padding: 0.5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
   color: var(--clr-black);
   letter-spacing: 0.1rem;
   background: var(--clr-grey-5);
@@ -74,7 +74,6 @@
 .all-categories ul li {
   cursor: pointer;
   padding: 0 0.25rem;
-  transition: var(--transition);
 }
 
 .all-categories ul li:hover {
@@ -84,6 +83,7 @@
 .search-sub-link {
   margin: 0 0.25rem;
   color: var(--clr-white);
+  transition: var(--transition);
 }
 
 .search-sub-link:hover {
@@ -119,7 +119,14 @@
     bottom: 0%;
     right: 15%;
   }
+
   .spacial {
-    right: 6%;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .spacial {
+    right: 4%;
   }
 }

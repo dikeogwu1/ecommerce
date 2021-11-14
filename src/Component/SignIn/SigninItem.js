@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import './signinItem.css'
 import { Link } from 'react-router-dom'
 import { FaCheckCircle, FaTimes } from 'react-icons/all'
@@ -7,8 +7,17 @@ import { useGlobalContext } from '../GlobalStore/Context'
 
 const SigninItem = () => {
   const [regModal, setRegModal] = useState(false)
-  const { person, setPerson, setRegistration } = useGlobalContext()
+  const { person, setPerson, registration, setRegistration } =
+    useGlobalContext()
   const nameContainer = useRef(null)
+
+  useEffect(() => {
+    if (person) {
+      setRegistration(true)
+    } else {
+      setRegistration(false)
+    }
+  }, [registration])
 
   // handle registration submit
   const handleRegSubmit = (e) => {
@@ -41,8 +50,8 @@ const SigninItem = () => {
             <h2>success!</h2>
             <p>you have successfully created an acoount</p>
           </div>
-          <Link to='/' onClick={setRegistration(true)}>
-            <button className='reg-modal-btn'>
+          <Link to='/'>
+            <button className='reg-modal-btn' onClick={setRegistration(true)}>
               continue as: <span>{person}</span>
             </button>
           </Link>
@@ -97,9 +106,15 @@ const SigninItem = () => {
           </div>
           <div className='radio-input'>
             <label htmlFor='male'>Male</label>
-            <input type='radio' id='male' required name='gender' value='male' />
+            <input type='radio' id='male' name='gender' value='male' />
             <label htmlFor='female'>Female</label>
-            <input type='radio' id='female' name='gender' value='female' />
+            <input
+              type='radio'
+              id='female'
+              required
+              name='gender'
+              value='female'
+            />
             <label htmlFor='other'>Other</label>
             <input type='radio' id='other' name='gender' value='other' />
           </div>

@@ -9,10 +9,10 @@ const Features = () => {
 
   return (
     // showing and removing submenu based on conditions
-    <div onMouseOver={() => setIsSubmenuOpen(false)}>
+    <main onMouseOver={() => setIsSubmenuOpen(false)}>
       <Featured />
       <Footer />
-    </div>
+    </main>
   )
 }
 

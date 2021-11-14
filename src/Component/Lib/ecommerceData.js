@@ -8,6 +8,7 @@ export const ecommerce = [
     name: `Men Sparkly Sequin 70s Disco Dancing Dress Shirt Mesh Long Sleeves Party Club M
 `,
     brand: 'brand new',
+    regullar: true,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635423628/my%20images/s-l225_mv7sji.webp`,
     price: 6.99,
     shiping: '0 bids · Time left3d 18h+$12.99 shippingfrom China',
@@ -65,6 +66,7 @@ export const ecommerce = [
     name: `SALSA DANCING EVOLUTION OF MAN MENS T-SHIRT TEE TOP GIFT CLOTHING
 `,
     brand: 'brand new',
+    regullar: true,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635424166/my%20images/s-l225_eezikh.webp`,
     price: 18.13,
     shiping: `Buy It Now+$11.26 shippingfrom United Kingdom
@@ -162,11 +164,11 @@ export const ecommerce = [
     id: 12,
     category: 'normal',
     type: 'ladies shirt',
-    popular: true,
     variant: 'Women clothing',
     name: `Printed Cotton Kaftan Ladies Wear Kimono Nice Maxi Dress Caftan Resort Wear Gown
 `,
     brand: `New (Other)`,
+    popular: true,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635422837/my%20images/s-l225_mqiygb.webp`,
     price: 21.47,
     shiping: `0 bids · Time left5d 14hFree International Shippingfrom IndiaFree returns`,
@@ -180,6 +182,7 @@ export const ecommerce = [
     name: `Floral Print Kaftan Lady Wear Cotton Caftan V-Neck Gown Beach Wear Maxi Dress
 `,
     brand: `New (Other)`,
+    regullar: true,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635422776/my%20images/s-l225_cg5zhp.webp`,
     price: 22.99,
     shiping: `0 bids · Time left5d 14hFree International Shippingfrom IndiaFree returns`,
@@ -247,6 +250,7 @@ export const ecommerce = [
     name: `Women Winter Plush Fluffy Bucket Hat Warm Faux Fur Fisherman Hats Cap Decor 
 `,
     brand: `Pre-Owned`,
+    regullar: true,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635423332/my%20images/s-l225_bi9awp.webp`,
     price: 9.78,
     amount: 0,
@@ -333,6 +337,7 @@ export const ecommerce = [
     name: `Ladies Remonte Shoulder Bag Q0390
 `,
     brand: `brand new`,
+    regullar: true,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635421862/my%20images/s-l200_jk0wvn.jpg`,
     price: 71.29,
     shiping: `Buy It Now+$20.81 shippingfrom United Kingdom
@@ -467,6 +472,7 @@ export const ecommerce = [
     name: `Charles by Charles David Womens Taupe Evening Sandals 7.5 Medium (B,M) BHFO 
 `,
     brand: `new (other)`,
+    regullar: true,
     img: `https://res.cloudinary.com/dikeogwu1/image/upload/v1635426257/my%20images/s-l225_hueq7n.webp`,
     price: 35.66,
     offer: 10.6,

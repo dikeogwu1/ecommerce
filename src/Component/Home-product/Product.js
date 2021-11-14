@@ -5,6 +5,7 @@ import '../Home-categories/categories.css'
 // imoprt all home product
 import MostReview from '../Home-categories/MostReview'
 import Popular from '../Home-categories/Popular'
+import RegullarProduct from '../Home-categories/RegullarProduct'
 import WristWatches from '../Home-categories/WristWatches'
 
 const Product = () => {
@@ -13,6 +14,7 @@ const Product = () => {
       <MostReview />
       <Popular />
       <WristWatches />
+      <RegullarProduct />
       <Footer />
     </div>
   )

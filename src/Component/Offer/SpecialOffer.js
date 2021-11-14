@@ -174,7 +174,7 @@ const SpecialOffer = () => {
             <span>{`${endWeekday}, ${endDate} ${endMonth} ${endYear} ${endHours}: ${endMinutes} am`}</span>
           </h4>
           <p>
-            Buy up to $2000 worth of any fab fashion product to stand a chance
+            Buy up to $1000 worth of any fab fashion product to stand a chance
             of wining any of the item beside, note only from the minimiun of the
             specified amount qualify.
           </p>

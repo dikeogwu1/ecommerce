@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 // import carousel css
 import './carousel.css'
@@ -43,6 +44,7 @@ const Carousel = () => {
               imageWrapper,
               icon,
               btnColor,
+              link,
             } = data
             let coordinate = 'carousel-next'
             if (index === value) {
@@ -56,7 +58,7 @@ const Carousel = () => {
             }
 
             return (
-              <div className={`carouse-item ${coordinate}`} key={id}>
+              <Link className={`carouse-item ${coordinate}`} key={id} to={link}>
                 {/* carousel item description */}
                 <div className={`carouse-desc ${descColor}`}>
                   <h3>{title}</h3>
@@ -80,7 +82,7 @@ const Carousel = () => {
                     <img src={img3} alt='shoe' />
                   </div>
                 </div>
-              </div>
+              </Link>
             )
           })}
           <button className='c-btn-left' onClick={() => setValue(value - 1)}>

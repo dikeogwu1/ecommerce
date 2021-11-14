@@ -108,9 +108,12 @@ const Featured = () => {
             </button>
           </div>
         </form>
+
         <div
           className={
-            showCategories ? 'all-categories show-categories' : 'all-categories'
+            showCategories
+              ? 'all-categories  show-categories'
+              : 'all-categories '
           }
         >
           <ul>

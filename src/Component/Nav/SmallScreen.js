@@ -21,7 +21,7 @@ const SmallScreen = () => {
     setIsSubmenuOpen,
     setIsModalOpen,
     registration,
-    setRegistration
+    setRegistration,
   } = useGlobalContext()
 
   // function to run when over on nav links
@@ -51,11 +51,13 @@ const SmallScreen = () => {
     }
   }, [navItem, modalMover.clientCenter, modalMover.clientHeight])
 
-  useEffect(()=>{
-if (person) {
-  setRegistration(true)
-}
-  },[])
+  useEffect(() => {
+    if (person) {
+      setRegistration(true)
+    } else {
+      setRegistration(false)
+    }
+  }, [person])
 
   // showing and removing submenu based on conditions
   const removeSubmenu = (e) => {
