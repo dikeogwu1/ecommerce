@@ -1,12 +1,17 @@
 import React from 'react'
+import ContactUs from '../Component/Contact/ContactUs'
 import Footer from '../Component/Footer/Footer'
+// import from global store
+import { useGlobalContext } from '../Component/GlobalStore/Context'
 
 const Contact = () => {
+  const { setIsSubmenuOpen } = useGlobalContext()
+
   return (
-    <div>
-      <h1>contact page</h1>
+    <main onMouseOver={() => setIsSubmenuOpen(false)}>
+      <ContactUs />
       <Footer />
-    </div>
+    </main>
   )
 }
 

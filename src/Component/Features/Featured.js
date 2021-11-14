@@ -80,6 +80,66 @@ const Featured = () => {
     setCategory(check)
   }
 
+  // conditional rendering
+  if (category.length < 1) {
+    return (
+      <section>
+        <div className='featured-container' onClick={handleOver}>
+          <div className='form-container'>
+            <form id='search-form' onSubmit={handleSubmit}>
+              <label htmlFor='search'>Shop by searching</label>
+              <div className='search-category'>
+                <input
+                  type='text'
+                  id='search'
+                  autoComplete='off'
+                  placeholder='Search for any product'
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                />
+                {/* Categories toggler */}
+                <div
+                  className='category-icon'
+                  onClick={() => setShowCategories(!showCategories)}
+                >
+                  <span className='sub'>Categories</span>
+                  {showCategories ? (
+                    <FaAngleUp />
+                  ) : (
+                    <FaAngleDown className='sub' />
+                  )}
+                </div>
+
+                <button type='submit' className='submit-search'>
+                  Search
+                </button>
+              </div>
+            </form>
+
+            <div
+              className={
+                showCategories
+                  ? 'all-categories  show-categories'
+                  : 'all-categories '
+              }
+            >
+              <ul>
+                {items.map((item, index) => {
+                  return (
+                    <li key={index} className='sub' onClick={handleCategory}>
+                      {item}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <h3>no product matches your search criteria</h3>
+      </section>
+    )
+  }
+
   return (
     <div className='featured-container' onClick={handleOver}>
       <div className='form-container'>
