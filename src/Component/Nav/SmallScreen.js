@@ -57,7 +57,7 @@ const SmallScreen = () => {
     } else {
       setRegistration(false)
     }
-  }, [person])
+  }, [person, setRegistration])
 
   // showing and removing submenu based on conditions
   const removeSubmenu = (e) => {
@@ -146,7 +146,7 @@ const SmallScreen = () => {
                   {links.map((inner, index) => {
                     const { label, icon, url } = inner
                     return (
-                      <Link key={index} to={url} className='modal-links'>
+                      <Link key={index} to={`${url}`} className='modal-links'>
                         <div className='sub-icon'>{icon}</div>
                         <h5 className='sub-label'>{label}</h5>
                       </Link>

@@ -5,7 +5,7 @@ import { useGlobalContext } from '../GlobalStore/Context'
 import { ecommerce } from '../Lib/ecommerceData'
 
 const SubCart = ({ single, value, setValue }) => {
-  const { img, id, variant, name, price, amount } = single
+  const { img, id, variant, name, price } = single
   const shorter = name.substring(0, 30)
   const { cart, setCart } = useGlobalContext()
   const [calc, setCalc] = useState(1)
@@ -20,7 +20,7 @@ const SubCart = ({ single, value, setValue }) => {
       }, 0)
 
     setValue(total)
-  }, [])
+  }, [cart, setValue])
 
   // delete item from cart
   const deleteItem = (e) => {

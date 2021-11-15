@@ -58,7 +58,7 @@ const Each = () => {
     })
 
     window.scrollTo({ top: 0 })
-  }, [id, cart])
+  }, [id, cart, newId])
   // add item to cart function
   const addToCart = (e) => {
     setInCart(true)

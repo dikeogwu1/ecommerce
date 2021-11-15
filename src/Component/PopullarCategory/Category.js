@@ -14,8 +14,9 @@ const Category = () => {
   useEffect(() => {
     const check = ecommerce.filter((item) => item.variant === id)
     setSingle(check)
-  }, [])
-  console.log(single)
+    window.scrollTo({ top: 0 })
+  }, [id])
+
   return (
     <main className='pop-category-container'>
       <h1>{id}</h1>

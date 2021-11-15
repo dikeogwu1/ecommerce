@@ -17,7 +17,7 @@ const SigninItem = () => {
     } else {
       setRegistration(false)
     }
-  }, [registration])
+  }, [registration, person, setRegistration])
 
   // handle registration submit
   const handleRegSubmit = (e) => {

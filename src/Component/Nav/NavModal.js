@@ -6,7 +6,8 @@ import sublinks from './navData'
 // import from global store
 import { useGlobalContext } from '../GlobalStore/Context'
 const NavModal = () => {
-  const { isModalOpen,person, setIsModalOpen, registration } = useGlobalContext()
+  const { isModalOpen, person, setIsModalOpen, registration } =
+    useGlobalContext()
 
   return (
     <aside className={isModalOpen ? 'nav-modal show-modal' : 'nav-modal'}>
@@ -49,7 +50,7 @@ const NavModal = () => {
                 className='signin'
                 onClick={() => setIsModalOpen(false)}
               >
-                Sign in
+                Register
               </Link>
             ) : (
               <h4 className='user'>

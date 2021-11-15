@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { FaCheckCircle, FaUser, FaTimes } from 'react-icons/all'
 // import Global store
 import { useGlobalContext } from '../GlobalStore/Context'

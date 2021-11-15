@@ -79,8 +79,9 @@ const SpecialOffer = () => {
 
   useEffect(() => {
     startCountDown()
+    const clean = countDown.current
     return () => {
-      clearInterval(countDown.current)
+      clearInterval(clean)
     }
   })
 

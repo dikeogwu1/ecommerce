@@ -19,7 +19,6 @@ const RegullarProduct = () => {
       <section className='popular-cate-wrapper'>
         {regullarItem.map((data, index) => {
           const { variant, img, id } = data
-          const page = variant.trim()
           return (
             <Link key={index} className='popular' to={`singleItem/${id}`}>
               <div className='popular-img-box'>

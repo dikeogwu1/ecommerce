@@ -71,6 +71,7 @@
 }
 
 .format p {
+  width: 100%;
   font-size: 1.1rem;
 }
 
@@ -81,13 +82,14 @@
 .s-offer-image-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
   border: 1px solid #222;
   background: #f30287;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .s-img-box {
-  height: 45%;
+  height: 140px;
 }
 
 .s-img-box img {

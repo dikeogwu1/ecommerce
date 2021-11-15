@@ -45,7 +45,7 @@ const Featured = () => {
       setCategory(ecommerce)
     }
     setShowCategories(false)
-  }, [])
+  }, [setShowCategories, setSubmit])
 
   // submit function for features page
   const handleSubmit = (e) => {
@@ -135,7 +135,7 @@ const Featured = () => {
             </div>
           </div>
         </div>
-        <h3>no product matches your search criteria</h3>
+        <h3 className='empty-cart'>no product matches your search criteria</h3>
       </section>
     )
   }

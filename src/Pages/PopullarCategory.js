@@ -8,7 +8,7 @@ import Footer from '../Component/Footer/Footer'
 import { useGlobalContext } from '../Component/GlobalStore/Context'
 
 const PopullarCategory = () => {
-  const { setIsSubmenuOpen, setInput } = useGlobalContext()
+  const { setIsSubmenuOpen } = useGlobalContext()
 
   return (
     <div onMouseOver={() => setIsSubmenuOpen(false)}>

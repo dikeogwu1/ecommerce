@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect, useReducer } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 // imoprt ecommerce store
 import { ecommerce } from '../Lib/ecommerceData'
 export const globalStore = React.createContext()
