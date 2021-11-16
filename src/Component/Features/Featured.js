@@ -99,12 +99,12 @@ const Featured = () => {
                 />
                 {/* Categories toggler */}
                 <div
-                  className='category-icon'
+                  className='category-icon sub'
                   onClick={() => setShowCategories(!showCategories)}
                 >
                   <span className='sub'>Categories</span>
                   {showCategories ? (
-                    <FaAngleUp />
+                    <FaAngleUp className='sub' />
                   ) : (
                     <FaAngleDown className='sub' />
                   )}
@@ -156,11 +156,15 @@ const Featured = () => {
             />
             {/* Categories toggler */}
             <div
-              className='category-icon'
+              className='category-icon sub'
               onClick={() => setShowCategories(!showCategories)}
             >
               <span className='sub'>Categories</span>
-              {showCategories ? <FaAngleUp /> : <FaAngleDown className='sub' />}
+              {showCategories ? (
+                <FaAngleUp className='sub' />
+              ) : (
+                <FaAngleDown className='sub' />
+              )}
             </div>
 
             <button type='submit' className='submit-search'>

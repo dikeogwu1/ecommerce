@@ -25,9 +25,17 @@ GENARAL STYLE CATEGORIES
   margin-bottom: 2rem;
 }
 
-.popular-cate-wrapper,
-.wrist-watches-wrapper,
 .most-review-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 6rem;
+  column-gap: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.popular-cate-wrapper,
+.wrist-watches-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 4rem;

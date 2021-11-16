@@ -7,7 +7,6 @@
   margin-bottom: 0.25rem;
   position: relative;
   box-shadow: var(--light-shadow);
-  /* height: 200px; */
 }
 
 /* nav container */
@@ -88,7 +87,6 @@ NAV MODAL FOR SMALL SCREEN
   top: 0;
   left: 0;
   padding: 1rem;
-
   width: 100vw;
   height: 100vh;
   background: hsla(0, 8%, 12%, 0.747);
@@ -112,6 +110,7 @@ NAV MODAL FOR SMALL SCREEN
   display: grid;
   place-content: center;
   position: relative;
+  padding: 0 1rem;
 }
 
 /* close modal button */

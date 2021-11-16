@@ -48,17 +48,16 @@ const Each = () => {
     })
     setSimillar(fill)
 
-    cart.map((item) => {
-      if (item.id === newId) {
-        setInCart(true)
-      } else {
-        setInCart(false)
-      }
-      return item
-    })
+    const added = cart.find((stuff) => stuff.id === newId)
+
+    if (added) {
+      setInCart(true)
+    } else {
+      setInCart(false)
+    }
 
     window.scrollTo({ top: 0 })
-  }, [id, cart, newId])
+  }, [id, newId, inCart])
   // add item to cart function
   const addToCart = (e) => {
     setInCart(true)

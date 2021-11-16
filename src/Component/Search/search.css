@@ -50,6 +50,7 @@
   transition: var(--transition);
   background: var(--main-primary-color-15);
   text-align: center;
+  padding: 0 0.25rem;
 }
 
 .submit-search:hover {
@@ -104,6 +105,10 @@
     width: 70%;
     display: flex;
     /* justify-content: space-between; */
+  }
+
+  .submit-search {
+    padding: 0;
   }
 
   .category-icon {
