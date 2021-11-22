@@ -19,6 +19,10 @@ const SigninItem = () => {
     }
   }, [registration, person, setRegistration])
 
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
+
   // handle registration submit
   const handleRegSubmit = (e) => {
     e.preventDefault()

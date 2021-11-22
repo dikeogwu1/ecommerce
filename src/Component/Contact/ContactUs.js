@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './contact.css'
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
+
   return (
     <div className='contact-container'>
       <section className='contact-us'>

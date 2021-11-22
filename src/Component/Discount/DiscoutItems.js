@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './discountItems.css'
 // import ecommerce store
@@ -12,6 +12,10 @@ const getDiscount = ecommerce.filter((item) => {
 const DiscoutItems = () => {
   const [discount] = useState(getDiscount)
 
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
+
   return (
     <main className='discount-container'>
       <h3>
@@ -19,6 +23,7 @@ const DiscoutItems = () => {
         <span className='a'>a</span>
         <span className='b'>b</span> market promo
       </h3>
+
       <div className='discount-wrapper'>
         {discount.map((product, index) => {
           const { id, name, variant, price, offer, img } = product
