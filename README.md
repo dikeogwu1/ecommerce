@@ -14,8 +14,6 @@ context api.
 
 DATA STORAGE: local storage.
 The item in cart are saved to local storage .
-The users name is also saved to local storage, it is wrong to do so
-as it exposes privacy, but i did so because is a frontend project with no backend and no data base.
 
 #### React Router Fix
 
