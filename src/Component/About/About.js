@@ -73,7 +73,7 @@ const About = () => {
           tenetur.
         </p>
         <h4>
-          thank for you petronage{' '}
+          thank for your petronage{' '}
           <span>
             <FaHandsHelping className='helping-hands' />
           </span>

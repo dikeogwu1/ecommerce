@@ -5,7 +5,7 @@ import { useGlobalContext } from '../GlobalStore/Context'
 import { ecommerce } from '../Lib/ecommerceData'
 
 const SubCart = ({ single, value, setValue }) => {
-  const { img, id, variant, name, price } = single
+  const { img, id, variant, name, price, amount } = single
   const shorter = name.substring(0, 30)
   const { cart, setCart } = useGlobalContext()
   const [calc, setCalc] = useState(1)
@@ -20,7 +20,7 @@ const SubCart = ({ single, value, setValue }) => {
       }, 0)
 
     setValue(total)
-  }, [cart, setValue])
+  }, [setValue])
 
   // delete item from cart
   const deleteItem = (e) => {
@@ -33,32 +33,24 @@ const SubCart = ({ single, value, setValue }) => {
   const decrease = (e) => {
     setCalc(calc - 1)
     const decreaseId = parseInt(e.currentTarget.dataset.id)
-    const check = ecommerce
-      .filter((item) => {
-        return item.id === decreaseId
-      })
-      .reduce((arr, curr) => {
-        return arr + price
-      }, 0)
-    setValue(value - check)
+    const check = ecommerce.find((item) => {
+      return item.id === decreaseId
+    }).price
+
     if (calc < 2) {
       const rem = cart.filter((one) => one.id !== decreaseId)
       setCart(rem)
     }
+    setValue(value - check)
   }
 
   // increase quantity
-
   const increase = (e) => {
     setCalc(calc + 1)
     const increaseId = parseInt(e.currentTarget.dataset.id)
-    const lookin = ecommerce
-      .filter((item) => {
-        return item.id === increaseId
-      })
-      .reduce((arr, curr) => {
-        return arr + price
-      }, 0)
+    const lookin = ecommerce.find((item) => {
+      return item.id === increaseId
+    }).price
     setValue(value + lookin)
   }
 

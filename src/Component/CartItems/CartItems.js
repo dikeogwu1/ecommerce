@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaCheckCircle, FaUser, FaTimes } from 'react-icons/all'
 // import Global store
 import { useGlobalContext } from '../GlobalStore/Context'
@@ -67,12 +67,12 @@ const CartItems = () => {
         </div>
       </div>
       <div className='cart-items-wrapper'>
-        {cart.map((single, index) => {
+        {cart.map((single) => {
           if (single.offer) {
             single.price = single.offer
           }
           return (
-            <article key={index} className='cart-items-box'>
+            <article key={single.id} className='cart-items-box'>
               <SubCart single={single} value={value} setValue={setValue} />
             </article>
           )
@@ -81,7 +81,7 @@ const CartItems = () => {
         <div className='calculate'>
           <div className='total-wrapper'>
             <h3 className='total-text'>total</h3>
-            <h4 className='total'>{parseFloat(value.toFixed(2))}</h4>
+            <h4 className='total'>${parseFloat(value.toFixed(2))}</h4>
           </div>
           <div className='calc-btn-wrapper'>
             <button className='clear-cart' onClick={handleClearCart}>
