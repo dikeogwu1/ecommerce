@@ -6,10 +6,10 @@ reactjs
 FRAME WORK: none.
 i choose not not use frame work just to show case my efficience in logic and styling.
 
-PRODUCT DATA: local.
+DATA: local.
 the ecommerce data is local and created by my self.
 
-DATA MANAGEMENT LIB:
+DATA MANAGEMENT:
 context api.
 
 DATA STORAGE: local storage.
