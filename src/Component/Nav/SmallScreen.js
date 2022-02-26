@@ -141,7 +141,7 @@ const SmallScreen = () => {
             return (
               <div key={index}>
                 <h4 className='inner-head'>{page}</h4>
-                <p>{text}</p>
+                <p className='inner-head-text'>{text}</p>
                 <div className='sub-inner'>
                   {links.map((inner, index) => {
                     const { label, icon, url } = inner

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { FaChevronUp, FaChevronDown } from 'react-icons/all'
+import { FaPlus, FaMinus } from 'react-icons/fa'
 // import Global store
 import { useGlobalContext } from '../GlobalStore/Context'
 import { ecommerce } from '../Lib/ecommerceData'
@@ -63,17 +63,17 @@ const SubCart = ({ single, value, setValue }) => {
         <h4>{shorter}...</h4>
         <h4>${price}</h4>
         <button onClick={deleteItem} data-id={id}>
-          delete
+          remove
         </button>
       </div>
 
       <div className='cart-item-btn-wrapper'>
         <button onClick={increase} data-id={id}>
-          <FaChevronUp />
+          <FaPlus />
         </button>
-        <div>{calc}</div>
+        <div className='quantity'>{calc}</div>
         <button onClick={decrease} data-id={id}>
-          <FaChevronDown />
+          <FaMinus />
         </button>
       </div>
     </div>

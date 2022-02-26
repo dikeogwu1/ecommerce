@@ -257,7 +257,9 @@ SUBMENU FOR BIG DIVICE SCREEN
   .inner-head {
     color: hsl(33, 74%, 45%);
   }
-
+  .inner-head-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
   .sub-inner {
     display: flex;
     justify-content: space-between;

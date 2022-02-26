@@ -49,10 +49,10 @@ const DiscoutItems = () => {
               <h4>{name}</h4>
               <p>{variant}</p>
               <h4>
-                usual price: <del>${price}</del>
+                formal price: <del>${price}</del>
               </h4>
               <h4>
-                discount price: <span>${offer}</span>
+                Now: <span>${offer}</span>
               </h4>
             </Link>
           )
