@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import { FaCheckCircle, FaUser, FaTimes } from 'react-icons/all'
+import React, { useState, useEffect } from "react";
+import { FaCheckCircle, FaUser, FaTimes } from "react-icons/fa";
 // import Global store
-import { useGlobalContext } from '../GlobalStore/Context'
-import './cartItems.css'
-import SubCart from './SubCart'
+import { useGlobalContext } from "../GlobalStore/Context";
+import "./cartItems.css";
+import SubCart from "./SubCart";
 
 const CartItems = () => {
   const {
@@ -15,26 +15,26 @@ const CartItems = () => {
     orderModal,
     setOrderModal,
     person,
-  } = useGlobalContext()
-  const [value, setValue] = useState(0.1)
+  } = useGlobalContext();
+  const [value, setValue] = useState(0.1);
 
   // handle order placing
   const handleOrder = () => {
     if (registration) {
-      setOrderModal(true)
+      setOrderModal(true);
     } else {
-      setIsRegistered(true)
+      setIsRegistered(true);
     }
-  }
+  };
 
   // clear cart function
   const handleClearCart = () => {
-    setCart([])
-  }
+    setCart([]);
+  };
 
   // conditional rendering
   if (cart.length < 1) {
-    return <h3 className='empty-cart'>your cart is currently empty</h3>
+    return <h3 className='empty-cart'>your cart is currently empty</h3>;
   }
 
   return (
@@ -42,8 +42,8 @@ const CartItems = () => {
       <div
         className={`${
           orderModal
-            ? 'order-modal-container show-order-modal'
-            : 'order-modal-container'
+            ? "order-modal-container show-order-modal"
+            : "order-modal-container"
         }`}
       >
         <div className='order-modal'>
@@ -69,13 +69,13 @@ const CartItems = () => {
       <div className='cart-items-wrapper'>
         {cart.map((single) => {
           if (single.offer) {
-            single.price = single.offer
+            single.price = single.offer;
           }
           return (
             <article key={single.id} className='cart-items-box'>
               <SubCart single={single} value={value} setValue={setValue} />
             </article>
-          )
+          );
         })}
         <div className='underline'></div>
         <div className='calculate'>
@@ -92,12 +92,12 @@ const CartItems = () => {
             </button>
           </div>
           <div className='please-reg'>{`${
-            isRegistered ? 'Please register to place order' : ''
+            isRegistered ? "Please register to place order" : ""
           }`}</div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CartItems
+export default CartItems;

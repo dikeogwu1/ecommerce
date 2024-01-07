@@ -1,9 +1,9 @@
-import React from 'react'
-import './search.css'
-import { FaAngleDown, FaAngleUp } from 'react-icons/all'
-import { Link } from 'react-router-dom'
+import React from "react";
+import "./search.css";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 // import global store
-import { useGlobalContext } from '../GlobalStore/Context'
+import { useGlobalContext } from "../GlobalStore/Context";
 
 const Search = () => {
   const {
@@ -13,18 +13,18 @@ const Search = () => {
     setShowCategories,
     input,
     setInput,
-  } = useGlobalContext()
+  } = useGlobalContext();
 
   // submit search
   const handleSubmit = (e) => {
-    e.preventDefault()
-  }
+    e.preventDefault();
+  };
 
   // search by category
   const handleClick = (e) => {
-    setInput(e.currentTarget.textContent)
-    setSubmit(true)
-  }
+    setInput(e.currentTarget.textContent);
+    setSubmit(true);
+  };
 
   return (
     <>
@@ -57,8 +57,8 @@ const Search = () => {
         <div
           className={
             showCategories
-              ? 'all-categories show-categories spacial'
-              : 'all-categories'
+              ? "all-categories show-categories spacial"
+              : "all-categories"
           }
         >
           <ul>
@@ -72,13 +72,13 @@ const Search = () => {
                 >
                   {item}
                 </Link>
-              )
+              );
             })}
           </ul>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

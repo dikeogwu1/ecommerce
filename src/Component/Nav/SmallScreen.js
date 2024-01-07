@@ -1,20 +1,20 @@
-import React, { useState, useRef, useEffect } from 'react'
-import { FaBars, FaUser } from 'react-icons/all'
-import { Link } from 'react-router-dom'
+import React, { useState, useRef, useEffect } from "react";
+import { FaBars, FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
 // imported the component holding the amount of items in cart
-import CartItem from '../InCart/CartItem'
+import CartItem from "../InCart/CartItem";
 // import links data
-import sublinks from './navData'
+import sublinks from "./navData";
 // import from global store
-import { useGlobalContext } from '../GlobalStore/Context'
+import { useGlobalContext } from "../GlobalStore/Context";
 
 const SmallScreen = () => {
-  const [navItem, setNavItem] = useState(null)
-  const [modalMover, setModalMover] = useState({})
+  const [navItem, setNavItem] = useState(null);
+  const [modalMover, setModalMover] = useState({});
   const [singleItem, setSingleItem] = useState([
-    { page: '', text: '', links: [{ label: '', icon: null }] },
-  ])
-  const subContainer = useRef(null)
+    { page: "", text: "", links: [{ label: "", icon: null }] },
+  ]);
+  const subContainer = useRef(null);
   const {
     isSubmenuOpen,
     person,
@@ -22,52 +22,52 @@ const SmallScreen = () => {
     setIsModalOpen,
     registration,
     setRegistration,
-  } = useGlobalContext()
+  } = useGlobalContext();
 
   // function to run when over on nav links
   const checkProduct = (e) => {
-    const products = e.target.textContent
-    let client = e.target.getBoundingClientRect()
-    let clientHeight = client.bottom - 3
-    let clientCenter = (client.left + client.right) / 2
+    const products = e.target.textContent;
+    let client = e.target.getBoundingClientRect();
+    let clientHeight = client.bottom - 3;
+    let clientCenter = (client.left + client.right) / 2;
     const items = sublinks.find((sub) => {
-      return sub.page === products
-    })
-    const { page } = items
-    setNavItem(page)
-    setModalMover({ clientHeight, clientCenter })
-    setIsSubmenuOpen(true)
-  }
+      return sub.page === products;
+    });
+    const { page } = items;
+    setNavItem(page);
+    setModalMover({ clientHeight, clientCenter });
+    setIsSubmenuOpen(true);
+  };
 
   useEffect(() => {
-    const fixSubmenu = subContainer.current
-    fixSubmenu.style.top = `${modalMover.clientHeight}px`
-    fixSubmenu.style.left = `${modalMover.clientCenter}px`
+    const fixSubmenu = subContainer.current;
+    fixSubmenu.style.top = `${modalMover.clientHeight}px`;
+    fixSubmenu.style.left = `${modalMover.clientCenter}px`;
     if (navItem) {
       const category = sublinks.find((subs) => {
-        return subs.page === navItem
-      })
-      setSingleItem([category])
+        return subs.page === navItem;
+      });
+      setSingleItem([category]);
     }
-  }, [navItem, modalMover.clientCenter, modalMover.clientHeight])
+  }, [navItem, modalMover.clientCenter, modalMover.clientHeight]);
 
   useEffect(() => {
     if (person) {
-      setRegistration(true)
+      setRegistration(true);
     } else {
-      setRegistration(false)
+      setRegistration(false);
     }
-  }, [person, setRegistration])
+  }, [person, setRegistration]);
 
   // showing and removing submenu based on conditions
   const removeSubmenu = (e) => {
-    const theTarget = e.target
-    if (!theTarget.classList.contains('product')) {
-      setIsSubmenuOpen(false)
+    const theTarget = e.target;
+    if (!theTarget.classList.contains("product")) {
+      setIsSubmenuOpen(false);
     } else {
-      setIsSubmenuOpen(true)
+      setIsSubmenuOpen(true);
     }
-  }
+  };
 
   return (
     <>
@@ -98,7 +98,7 @@ const SmallScreen = () => {
 
             {/* features page */}
             <li onMouseOver={checkProduct} className='product'>
-              Features
+              Featured
             </li>
 
             {/* help and contact in page */}
@@ -131,35 +131,35 @@ const SmallScreen = () => {
       </nav>
       <section
         className={
-          isSubmenuOpen ? 'b-submenu-wrapper show-submenu' : 'b-submenu-wrapper'
+          isSubmenuOpen ? "b-submenu-wrapper show-submenu" : "b-submenu-wrapper"
         }
         ref={subContainer}
       >
         <section>
           {singleItem.map((single, index) => {
-            const { page, text, links } = single
+            const { page, text, links } = single;
             return (
               <div key={index}>
                 <h4 className='inner-head'>{page}</h4>
                 <p className='inner-head-text'>{text}</p>
                 <div className='sub-inner'>
                   {links.map((inner, index) => {
-                    const { label, icon, url } = inner
+                    const { label, icon, url } = inner;
                     return (
                       <Link key={index} to={`${url}`} className='modal-links'>
                         <div className='sub-icon'>{icon}</div>
                         <h5 className='sub-label'>{label}</h5>
                       </Link>
-                    )
+                    );
                   })}
                 </div>
               </div>
-            )
+            );
           })}
         </section>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default SmallScreen
+export default SmallScreen;

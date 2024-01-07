@@ -1,43 +1,43 @@
-import React, { useState, useRef, useEffect } from 'react'
-import './signinItem.css'
-import { Link } from 'react-router-dom'
-import { FaCheckCircle, FaTimes } from 'react-icons/all'
+import React, { useState, useRef, useEffect } from "react";
+import "./signinItem.css";
+import { Link } from "react-router-dom";
+import { FaCheckCircle, FaTimes } from "react-icons/fa";
 // import Global store
-import { useGlobalContext } from '../GlobalStore/Context'
+import { useGlobalContext } from "../GlobalStore/Context";
 
 const SigninItem = () => {
-  const [regModal, setRegModal] = useState(false)
+  const [regModal, setRegModal] = useState(false);
   const { person, setPerson, registration, setRegistration } =
-    useGlobalContext()
-  const nameContainer = useRef(null)
+    useGlobalContext();
+  const nameContainer = useRef(null);
 
   useEffect(() => {
     if (person) {
-      setRegistration(true)
+      setRegistration(true);
     } else {
-      setRegistration(false)
+      setRegistration(false);
     }
-  }, [registration, person, setRegistration])
+  }, [registration, person, setRegistration]);
 
   useEffect(() => {
-    window.scrollTo({ top: 0 })
-  }, [])
+    window.scrollTo({ top: 0 });
+  }, []);
 
   // handle registration submit
   const handleRegSubmit = (e) => {
-    e.preventDefault()
-    setRegModal(true)
-    const userName = nameContainer.current.value
-    setPerson(userName)
-  }
+    e.preventDefault();
+    setRegModal(true);
+    const userName = nameContainer.current.value;
+    setPerson(userName);
+  };
 
   return (
     <section className='register-container'>
       <article
         className={`${
           regModal
-            ? 'reg-modal-container  show-reg-modal'
-            : 'reg-modal-container'
+            ? "reg-modal-container  show-reg-modal"
+            : "reg-modal-container"
         }`}
       >
         <div className='reg-modal-wrapper'>
@@ -128,7 +128,7 @@ const SigninItem = () => {
         </form>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SigninItem
+export default SigninItem;

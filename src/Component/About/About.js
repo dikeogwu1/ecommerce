@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 // import about css
-import './about.css'
-import { FaHandsHelping } from 'react-icons/all'
+import "./about.css";
+import { FaHandsHelping } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -73,14 +73,14 @@ const About = () => {
           tenetur.
         </p>
         <h4>
-          thank for your petronage{' '}
+          thank for your petronage{" "}
           <span>
             <FaHandsHelping className='helping-hands' />
           </span>
         </h4>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

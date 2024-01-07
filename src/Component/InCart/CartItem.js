@@ -1,11 +1,11 @@
-import React from 'react'
-import { BsCart2 } from 'react-icons/all'
-import './navItem.css'
+import React from "react";
+import { BsCart2 } from "react-icons/bs";
+import "./navItem.css";
 // import global store
-import { useGlobalContext } from '../GlobalStore/Context'
+import { useGlobalContext } from "../GlobalStore/Context";
 
 const CartItem = () => {
-  const { cart } = useGlobalContext()
+  const { cart } = useGlobalContext();
   return (
     <>
       <aside className='wrapper'>
@@ -17,7 +17,7 @@ const CartItem = () => {
         </div>
       </aside>
     </>
-  )
-}
+  );
+};
 
-export default CartItem
+export default CartItem;

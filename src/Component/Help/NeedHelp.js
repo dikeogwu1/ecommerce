@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { FaArrowRight } from 'react-icons/fa'
-import './help.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+import "./help.css";
 
 const NeedHelp = () => {
   return (
@@ -10,29 +10,29 @@ const NeedHelp = () => {
         <h2 className='center'>let serve you better</h2>
 
         <div className='help-you-wrapper'>
-          <h3>how can we be of help ?</h3>
+          <h3>how can we be of help?</h3>
           <textarea></textarea>
         </div>
         <div className='help-you-wrapper-2'>
           <div className='reset'>
-            <h4>reset my account infomation</h4>
+            <h4>How to reset account informations</h4>
             <Link className='help-link reg-link' to='signin'>
               Reset
             </Link>
           </div>
           <div className='only-watch'>
-            <h4>show me where to get wrist watch</h4>
+            <h4>Where to find wristwatches</h4>
             <Link className='help-link' to='popullar/Wrist watch'>
-              only wrist watches{' '}
+              Find wristwatches{" "}
               <span>
                 <FaArrowRight />
               </span>
             </Link>
           </div>
           <div className='only-discount'>
-            <h4>i need only products with discount</h4>
+            <h4>I need products with discount</h4>
             <Link className='help-link' to='/discount'>
-              products with discount{' '}
+              Discounted products
               <span>
                 <FaArrowRight />
               </span>
@@ -55,7 +55,7 @@ const NeedHelp = () => {
         </p>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default NeedHelp
+export default NeedHelp;

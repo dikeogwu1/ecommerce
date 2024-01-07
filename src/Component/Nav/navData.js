@@ -1,42 +1,43 @@
-import {
-  FaCreditCard,
-  FaBook,
-  BiHelpCircle,
-  GrInfo,
-  MdAddShoppingCart,
-  MdContactPhone,
-} from 'react-icons/all'
-import React from 'react'
+import { FaCreditCard, FaBook } from "react-icons/fa";
+import { BiHelpCircle } from "react-icons/bi";
+import { GrInfo } from "react-icons/gr";
+import { MdAddShoppingCart, MdContactPhone } from "react-icons/md";
+import React from "react";
 const sublinks = [
   {
-    page: 'Daily deals',
-    text: `Check out our deals of the day, it's awesome`,
+    page: "Daily deals",
+    text: `Checkout all the exciting deals we have for today.`,
     links: [
-      { label: 'Discount', icon: <FaCreditCard />, url: '/discount', img: '' },
-      { label: 'offers', icon: <MdAddShoppingCart />, url: '/offer', img: '' },
+      { label: "Discount", icon: <FaCreditCard />, url: "/discount", img: "" },
+      { label: "offers", icon: <MdAddShoppingCart />, url: "/offer", img: "" },
     ],
   },
   {
-    page: 'Features',
-    text: 'Explor all features,multiple choices ... ',
+    page: "Featured",
+    text: "Explore all the featured products.",
     links: [
-      { label: 'our features', icon: <FaBook />, url: '/features', img: '' },
-    ],
-  },
-  {
-    page: 'Help & contact',
-    text: 'Contact our customers care for answers,info,know more about us',
-    links: [
-      { label: 'need help', icon: <BiHelpCircle />, url: '/help', img: '' },
-      { label: 'contact', icon: <MdContactPhone />, url: '/contact', img: '' },
       {
-        label: 'about us',
-        icon: <GrInfo />,
-        url: '/about',
-        img: '',
+        label: "Featured products",
+        icon: <FaBook />,
+        url: "/features",
+        img: "",
       },
     ],
   },
-]
+  {
+    page: "Help & contact",
+    text: "Contact our customers care for informations or supports.",
+    links: [
+      { label: "need help", icon: <BiHelpCircle />, url: "/help", img: "" },
+      { label: "contact", icon: <MdContactPhone />, url: "/contact", img: "" },
+      {
+        label: "about us",
+        icon: <GrInfo />,
+        url: "/about",
+        img: "",
+      },
+    ],
+  },
+];
 
-export default sublinks
+export default sublinks;

@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 // import featured css
-import './featured.css'
-import { FaAngleDown, FaAngleUp } from 'react-icons/all'
+import "./featured.css";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 // import global store
-import { useGlobalContext } from '../GlobalStore/Context'
+import { useGlobalContext } from "../GlobalStore/Context";
 // import ecommerce store
-import { ecommerce } from '../Lib/ecommerceData'
-import Items from './Items'
+import { ecommerce } from "../Lib/ecommerceData";
+import Items from "./Items";
 
 const Featured = () => {
   const {
@@ -17,68 +17,68 @@ const Featured = () => {
     setShowCategories,
     setInput,
     items,
-  } = useGlobalContext()
+  } = useGlobalContext();
   const [category, setCategory] = useState([
     {
-      id: '',
-      variant: '',
-      type: '',
+      id: "",
+      variant: "",
+      type: "",
       name: ``,
       brand: ``,
       img: ``,
-      price: '',
-      offer: '',
+      price: "",
+      offer: "",
     },
-  ])
+  ]);
 
   // effect for initial render
   useEffect(() => {
-    let upper = input.charAt(0).toUpperCase()
-    upper += input.substring(1)
+    let upper = input.charAt(0).toUpperCase();
+    upper += input.substring(1);
     if (input) {
       const search = ecommerce.filter((item) => {
-        return item.name.includes(upper) || item.variant.includes(upper)
-      })
-      setCategory(search)
-      setSubmit(true)
+        return item.name.includes(upper) || item.variant.includes(upper);
+      });
+      setCategory(search);
+      setSubmit(true);
     } else {
-      setCategory(ecommerce)
+      setCategory(ecommerce);
     }
-    setShowCategories(false)
-  }, [setShowCategories, setSubmit])
+    setShowCategories(false);
+  }, [setShowCategories, setSubmit]);
 
   // submit function for features page
   const handleSubmit = (e) => {
-    e.preventDefault()
-    let upper = input.charAt(0).toUpperCase()
-    upper += input.substring(1)
+    e.preventDefault();
+    let upper = input.charAt(0).toUpperCase();
+    upper += input.substring(1);
     if (input) {
       const search = ecommerce.filter((item) => {
-        return item.name.includes(upper) || item.variant.includes(upper)
-      })
-      setCategory(search)
-      setSubmit(true)
+        return item.name.includes(upper) || item.variant.includes(upper);
+      });
+      setCategory(search);
+      setSubmit(true);
     }
-  }
+  };
 
   // close category dropdown by clicking any where function
   const handleOver = (e) => {
-    if (!e.target.classList.contains('sub')) {
-      setShowCategories(false)
+    if (!e.target.classList.contains("sub")) {
+      setShowCategories(false);
     }
-  }
+  };
 
   // search by category function
   const handleCategory = (e) => {
-    const items = e.currentTarget.textContent
-    setInput(items)
-    setShowCategories(false)
-    setSubmit(true)
+    const items = e.currentTarget.textContent;
+    setInput(items);
+    setShowCategories(false);
+    setSubmit(true);
     const check = ecommerce.filter((item) => {
-      return item.variant === items
-    })
-    setCategory(check)
-  }
+      return item.variant === items;
+    });
+    setCategory(check);
+  };
 
   // conditional rendering
   if (category.length < 1) {
@@ -119,8 +119,8 @@ const Featured = () => {
             <div
               className={
                 showCategories
-                  ? 'all-categories  show-categories'
-                  : 'all-categories '
+                  ? "all-categories  show-categories"
+                  : "all-categories "
               }
             >
               <ul>
@@ -129,7 +129,7 @@ const Featured = () => {
                     <li key={index} className='sub' onClick={handleCategory}>
                       {item}
                     </li>
-                  )
+                  );
                 })}
               </ul>
             </div>
@@ -137,7 +137,7 @@ const Featured = () => {
         </div>
         <h3 className='empty-cart'>no product matches your search criteria</h3>
       </section>
-    )
+    );
   }
 
   return (
@@ -176,8 +176,8 @@ const Featured = () => {
         <div
           className={
             showCategories
-              ? 'all-categories  show-categories'
-              : 'all-categories '
+              ? "all-categories  show-categories"
+              : "all-categories "
           }
         >
           <ul>
@@ -186,7 +186,7 @@ const Featured = () => {
                 <li key={index} className='sub' onClick={handleCategory}>
                   {item}
                 </li>
-              )
+              );
             })}
           </ul>
         </div>
@@ -196,16 +196,16 @@ const Featured = () => {
       <h3>explore all featured product</h3>
       <section className='feature-wrapper'>
         {(submit ? category : ecommerce).map((product) => {
-          const { id } = product
+          const { id } = product;
           return (
             <article key={id}>
               <Items product={product} />
             </article>
-          )
+          );
         })}
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Featured
+export default Featured;

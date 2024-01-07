@@ -1,16 +1,16 @@
-import React from 'react'
-import { FaTimes, FaUser } from 'react-icons/all'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { FaTimes, FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
 // import nav links data
-import sublinks from './navData'
+import sublinks from "./navData";
 // import from global store
-import { useGlobalContext } from '../GlobalStore/Context'
+import { useGlobalContext } from "../GlobalStore/Context";
 const NavModal = () => {
   const { isModalOpen, person, setIsModalOpen, registration } =
-    useGlobalContext()
+    useGlobalContext();
 
   return (
-    <aside className={isModalOpen ? 'nav-modal show-modal' : 'nav-modal'}>
+    <aside className={isModalOpen ? "nav-modal show-modal" : "nav-modal"}>
       <div className='modal-wrapper'>
         <button className='close-modal' onClick={() => setIsModalOpen(false)}>
           <FaTimes />
@@ -18,14 +18,14 @@ const NavModal = () => {
         <ul className='modal-items'>
           {/* map over modal sublinks */}
           {sublinks.map((sub, index) => {
-            const { page, links } = sub
+            const { page, links } = sub;
             return (
               <article key={index}>
                 <h4>{page}</h4>
                 {/* inner map over */}
                 <div className='sub-links'>
                   {links.map((link, index) => {
-                    const { label, icon, url } = link
+                    const { label, icon, url } = link;
                     return (
                       <Link
                         key={index}
@@ -36,11 +36,11 @@ const NavModal = () => {
                         <div className='sub-icon'>{icon}</div>
                         <h5 className='sub-label'>{label}</h5>
                       </Link>
-                    )
+                    );
                   })}
                 </div>
               </article>
-            )
+            );
           })}
           {/* link to sign in page */}
           <li>
@@ -61,7 +61,7 @@ const NavModal = () => {
         </ul>
       </div>
     </aside>
-  )
-}
+  );
+};
 
-export default NavModal
+export default NavModal;

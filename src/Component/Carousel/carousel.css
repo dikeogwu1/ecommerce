@@ -43,6 +43,8 @@
   height: 100%;
   padding: 0.5rem;
   display: none;
+  padding-left: 3rem;
+  padding-top: 2rem;
 }
 
 .carouse-image-wrapper {

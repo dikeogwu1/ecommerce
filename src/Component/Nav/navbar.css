@@ -1,5 +1,5 @@
 .nav {
-  background-image: url('https://res.cloudinary.com/dikeogwu1/image/upload/v1636236735/my%20images/Hipster_summer_outdoors__24_copy_01.jpg_lrnwqn.jpg');
+  background-image: url("https://res.cloudinary.com/dikeogwu1/image/upload/v1636236735/my%20images/Hipster_summer_outdoors__24_copy_01.jpg_lrnwqn.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -128,9 +128,11 @@ NAV MODAL FOR SMALL SCREEN
 .sub-links {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
   align-items: center;
   flex-wrap: wrap;
-  margin: 1rem 0.5rem;
+  margin: 2rem 0.5rem;
 }
 
 .sub-icon,
@@ -142,22 +144,23 @@ NAV MODAL FOR SMALL SCREEN
 
 .modal-links {
   transition: var(--transition);
+  color: var(--main-primary-color-18);
 }
 
 .modal-links:hover {
-  color: var(--clr-green-dark);
+  color: var(--main-dark-color);
 }
 
 .signin {
   margin-left: 3rem;
   transition: var(--transition);
-  color: var(--clr-red-dark);
+  color: var(--main-primary-color-20);
   font-size: 1.25rem;
   font-family: var(--ff-primary);
 }
 
 .signin:hover {
-  color: var(--clr-green-dark);
+  color: var(--main-dark-color);
 }
 
 /* 
@@ -171,14 +174,18 @@ SUBMENU FOR BIG DIVICE SCREEN
 }
 
 @media screen and (min-width: 800px) {
+  .nav {
+    padding: 0.5rem 3rem;
+  }
   .nav-links {
     display: block;
     display: flex;
     justify-content: space-between;
     flex-basis: 60%;
     text-transform: capitalize;
-    color: var(--clr-black);
+    color: var(--main-dark-color);
     padding-bottom: 0.5rem;
+    font-weight: 600;
   }
 
   .bars-btn {
@@ -188,8 +195,8 @@ SUBMENU FOR BIG DIVICE SCREEN
   .home-link,
   .signin-link {
     transition: var(--transition);
-    color: var(--clr-secondary-9);
-    font-weight: bold;
+    color: var(--main-dark-color);
+    font-weight: 700;
     font-size: 1.25rem;
     cursor: pointer;
   }
@@ -242,7 +249,7 @@ SUBMENU FOR BIG DIVICE SCREEN
   }
 
   .b-submenu-wrapper::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -15px;
     right: 50%;
@@ -258,7 +265,7 @@ SUBMENU FOR BIG DIVICE SCREEN
     color: hsl(33, 74%, 45%);
   }
   .inner-head-text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
   .sub-inner {
     display: flex;
