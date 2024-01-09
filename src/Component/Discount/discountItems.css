@@ -46,11 +46,14 @@
 }
 
 @media screen and (min-width: 800px) {
+  .discount-container {
+    margin: 3rem;
+  }
   .discount-wrapper {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .big {
-    grid-column: 3/5;
+    /* grid-column: 3/5; */
   }
 }

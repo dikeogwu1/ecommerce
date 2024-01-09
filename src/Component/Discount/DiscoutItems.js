@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import './discountItems.css'
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./discountItems.css";
 // import ecommerce store
-import { ecommerce } from '../Lib/ecommerceData'
+import { ecommerce } from "../Lib/ecommerceData";
 
 // get all discount products
 const getDiscount = ecommerce.filter((item) => {
-  return item.category === 'offer'
-})
+  return item.category === "offer";
+});
 
 const DiscoutItems = () => {
-  const [discount] = useState(getDiscount)
+  const [discount] = useState(getDiscount);
 
   useEffect(() => {
-    window.scrollTo({ top: 0 })
-  }, [])
+    window.scrollTo({ top: 0 });
+  }, []);
 
   return (
     <main className='discount-container'>
@@ -26,16 +26,16 @@ const DiscoutItems = () => {
 
       <div className='discount-wrapper'>
         {discount.map((product, index) => {
-          const { id, name, variant, price, offer, img } = product
-          let position = 'normal'
+          const { id, name, variant, price, offer, img } = product;
+          let position = "normal";
           if (index === 2) {
-            position = 'big'
+            position = "big";
           }
           if (index === 7) {
-            position = 'big'
+            position = "big";
           }
           if (index === 12) {
-            position = 'big'
+            position = "big";
           }
           return (
             <Link
@@ -49,17 +49,17 @@ const DiscoutItems = () => {
               <h4>{name}</h4>
               <p>{variant}</p>
               <h4>
-                formal price: <del>${price}</del>
+                Old price: <del>${price}</del>
               </h4>
               <h4>
-                Now: <span>${offer}</span>
+                New price: <span>${offer}</span>
               </h4>
             </Link>
-          )
+          );
         })}
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default DiscoutItems
+export default DiscoutItems;

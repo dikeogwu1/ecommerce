@@ -1,28 +1,19 @@
 # details
 
-PROJECT TECHNOLOGY:
-reactjs
+Fab Store is a cool e-commerce site. It's all about making online shopping easy and fun. The design is user-friendly, and you can easily check out your favorite products hassle-free.
 
-FRAME WORK: none.
-i choose not not use frame work just to show case my efficience in logic and styling.
+#### DATA
 
-DATA: local.
-the ecommerce data is local and created by my self.
+The ecommerce data is locally created by me.
 
-DATA MANAGEMENT:
-context api.
+#### STATE MANAGEMENT
 
-DATA STORAGE: local storage.
+The states of the app is managed with context api.
+
+#### DATA STORAGE
+
 The item in cart are saved to local storage .
 
 #### React Router Fix
 
-(Fix)[https://dev.to/dance2die/page-not-found-on-netlify-with-react-router-58mc]
-
-#### CRA Fix
-
-```
-
-"build": "CI= react-scripts build",
-
-```
+(Live Demo)[https://fabstore.netlify.app]

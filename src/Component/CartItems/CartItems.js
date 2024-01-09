@@ -34,7 +34,7 @@ const CartItems = () => {
 
   // conditional rendering
   if (cart.length < 1) {
-    return <h3 className='empty-cart'>your cart is currently empty</h3>;
+    return <h3 className='empty-cart'>your cart is empty</h3>;
   }
 
   return (

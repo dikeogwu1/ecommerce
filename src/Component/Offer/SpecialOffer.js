@@ -176,8 +176,8 @@ const SpecialOffer = () => {
           </h4>
           <p>
             Buy up to $1000 worth of any fab fashion product to stand a chance
-            of wining any of the item beside, note only from the minimiun of the
-            specified amount qualify.
+            of wining any of the items beside, note only from the minimiun of the
+            specified amount.
           </p>
           <div>
             <h3 id='offer-ended'>sorry this offer has ended</h3>

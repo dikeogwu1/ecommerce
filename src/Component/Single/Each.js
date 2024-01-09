@@ -1,77 +1,77 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
-import { FaCartPlus } from 'react-icons/fa'
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import { FaCartPlus } from "react-icons/fa";
 // import single item css
-import './each.css'
-import { useParams } from 'react-router-dom'
+import "./each.css";
+import { useParams } from "react-router-dom";
 // import ecommerce store
-import { ecommerce } from '../Lib/ecommerceData'
+import { ecommerce } from "../Lib/ecommerceData";
 // import Global store
-import { useGlobalContext } from '../GlobalStore/Context'
+import { useGlobalContext } from "../GlobalStore/Context";
 // import footer
-import Footer from '../Footer/Footer'
+import Footer from "../Footer/Footer";
 
 const Each = () => {
   const [product, setProduct] = useState([
     {
-      id: '',
-      variant: '',
-      type: '',
+      id: "",
+      variant: "",
+      type: "",
       name: ``,
       brand: ``,
       img: ``,
-      price: '',
-      offer: '',
+      price: "",
+      offer: "",
       shiping: ``,
     },
-  ])
+  ]);
   const [simillar, setSimillar] = useState([
     {
-      id: '',
+      id: "",
       img: ``,
-      price: '',
-      offer: '',
+      price: "",
+      offer: "",
     },
-  ])
-  const [inCart, setInCart] = useState(false)
-  const { setCart, cart } = useGlobalContext()
-  const addContainer = useRef(null)
-  const { id } = useParams()
-  const newId = parseInt(id)
+  ]);
+  const [inCart, setInCart] = useState(false);
+  const { setCart, cart } = useGlobalContext();
+  const addContainer = useRef(null);
+  const { id } = useParams();
+  const newId = parseInt(id);
 
   useEffect(() => {
-    const single = ecommerce.find((item) => item.id === newId)
-    setProduct([single])
+    const single = ecommerce.find((item) => item.id === newId);
+    setProduct([single]);
 
     const fill = ecommerce.filter((one) => {
-      return one.variant === single.variant && one.id !== single.id
-    })
-    setSimillar(fill)
+      return one.variant === single.variant && one.id !== single.id;
+    });
+    setSimillar(fill);
 
-    const added = cart.find((stuff) => stuff.id === newId)
+    const added = cart.find((stuff) => stuff.id === newId);
 
     if (added) {
-      setInCart(true)
+      setInCart(true);
     } else {
-      setInCart(false)
+      setInCart(false);
     }
 
-    window.scrollTo({ top: 0 })
-  }, [id, newId, inCart])
+    window.scrollTo({ top: 0 });
+  }, [id, newId, inCart]);
   // add item to cart function
   const addToCart = (e) => {
-    setInCart(true)
-    const itemId = parseInt(e.currentTarget.dataset.id)
-    const items = ecommerce.find((item) => item.id === itemId)
-    setCart([...cart, items])
-  }
+    setInCart(true);
+    const itemId = parseInt(e.currentTarget.dataset.id);
+    const items = ecommerce.find((item) => item.id === itemId);
+    setCart([...cart, items]);
+  };
 
   return (
     <main className='single-container'>
       <section className='single-wrapper'>
         {product.map((item) => {
           const { id, img, variant, brand, offer, price, name, type, shiping } =
-            item
+            item;
           return (
             <article className='single-item' key={id}>
               <div className='single-img-wrapper'>
@@ -102,17 +102,15 @@ const Each = () => {
                     ref={addContainer}
                     data-id={id}
                   >
-                    <FaCartPlus />{' '}
+                    <FaCartPlus />{" "}
                     <span>{`${
-                      !inCart
-                        ? 'Add this item to Cart'
-                        : 'item has been added to cart'
+                      !inCart ? "Add to Cart" : "item added to cart"
                     }`}</span>
                   </button>
                 </div>
               </div>
             </article>
-          )
+          );
         })}
       </section>
 
@@ -122,17 +120,17 @@ const Each = () => {
           with <span className='f'>f</span>
           <span className='a'>a</span>
           <span className='b'>b</span>
-          &nbsp; shopping have never been easier
+          &nbsp;, shopping have never been easier
         </h3>
-        <h4>our long team existance is your long time of endless petronage</h4>
-        <p>thank you for shopping with us</p>
+        <h4>Our long existance is your long endless petronage.</h4>
+        <p>thank you for shopping with us.</p>
       </section>
 
       <section className='simillar-container'>
         <h3>simillar products</h3>
         <div className='simillar-wrap'>
           {simillar.map((sim) => {
-            const { img, id, price, offer } = sim
+            const { img, id, price, offer } = sim;
             return (
               <Link key={id} className='simillar-box' to={`${id}`}>
                 <div className='simillar-img-wrapper'>
@@ -143,13 +141,13 @@ const Each = () => {
                   <span>{!offer ? `$${price}` : `$${offer}`}</span>
                 </div>
               </Link>
-            )
+            );
           })}
         </div>
       </section>
       <Footer />
     </main>
-  )
-}
+  );
+};
 
-export default Each
+export default Each;

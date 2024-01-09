@@ -1,6 +1,9 @@
 /* empty cart */
 .empty-cart {
   text-align: center;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 /* cart Modal */

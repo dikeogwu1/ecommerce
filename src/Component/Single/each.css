@@ -14,6 +14,7 @@
   grid-template-columns: 1fr;
   gap: 2rem;
   padding: 0 4rem;
+  margin-bottom: 6rem;
 }
 
 .single-img-wrapper {
@@ -62,20 +63,24 @@
 
 .single-design {
   height: 200px;
-  background-image: url('https://res.cloudinary.com/dikeogwu1/image/upload/v1636237758/my%20images/source_fmsoel.jpg');
+  background-image: url("https://res.cloudinary.com/dikeogwu1/image/upload/v1636237758/my%20images/source_fmsoel.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .design-text-wrapper {
   text-align: center;
 }
-
+.single-design h4 {
+  text-shadow: 0 1px var(--clr-white);
+}
 .single-design p {
   color: var(--main-primary-color-20);
+  text-shadow: 0 1px var(--clr-white);
 }
 
 /* simillar products */

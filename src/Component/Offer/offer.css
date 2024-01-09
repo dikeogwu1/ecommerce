@@ -1,5 +1,7 @@
 .offer-container {
-  margin: 3rem 1rem;
+  margin: 3rem auto;
+  display: grid;
+  gap: 4rem;
 }
 
 .second-offer {
@@ -12,8 +14,8 @@
   grid-template-columns: 1fr;
   align-items: center;
   width: 100%;
-  margin: 3 auto;
-  row-gap: 2rem;
+  margin: 3rem auto;
+  gap: 2rem;
 }
 
 .s-offer-image-wrapper,
@@ -41,7 +43,6 @@
   margin-top: 3rem;
   color: var(--clr-grey-6);
   font-size: 1.4rem;
-  width: 90%;
 }
 
 /* countdown timer */
@@ -84,7 +85,7 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   border: 1px solid #222;
-  background: #f30287;
+  background: #222;
   padding: 2rem 0;
 }
 
@@ -120,6 +121,9 @@
     width: 85%;
   }
 
+  .s-offer-image-wrapper {
+    order: 2;
+  }
   .offer-desc h3 {
     font-size: 1.5rem;
   }
